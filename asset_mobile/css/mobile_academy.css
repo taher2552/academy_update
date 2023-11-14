@@ -2014,11 +2014,6 @@ input:checked + .mob_switch_slider:before {
   gap: 6px;
 }
 
-.mob_cross{
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
 
 
 .icons img {
