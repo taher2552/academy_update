@@ -1959,7 +1959,7 @@ input:checked + .mob_switch_slider:before {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom:-11.5%;
+  bottom:-11.75%;
   left:50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -1974,31 +1974,18 @@ input:checked + .mob_switch_slider:before {
   width: 1.5rem;
   font-size: 1.2em;
   line-height: 1;
-  padding: 0 0.2em 0.15em;
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
   transition: color 0.12s ease-in-out;
-  position: absolute;
-  top: 4px;
-  right: 4px;
   font-weight: 600;
   color: #505050;
   background-color: #f0f2f5;
-  padding: 0;
   width: 22px;
   height: 22px;
   border-radius: 50%;
 }
-.close-button:hover {
-  color: #ffffff;
-  background-color: #fe5c4d;
-  padding: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  transition: all 0.4s ease-in;
-}
+
 .show-modal {
   opacity: 1;
   visibility: visible;
@@ -2025,6 +2012,12 @@ input:checked + .mob_switch_slider:before {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 6px;
+}
+
+.mob_cross{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 
