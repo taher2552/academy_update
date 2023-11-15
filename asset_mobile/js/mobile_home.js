@@ -288,7 +288,18 @@ document
     });
   });
 
+  let originalHeight = window.innerHeight;
 
   window.addEventListener('resize', function() {
-        document.querySelector('#modal-msg-content').style.backgroundColor("green");
-});
+      const currentHeight = window.innerHeight;
+
+      if (currentHeight > originalHeight) {
+          // Keyboard is likely visible, do nothing or revert changes
+          document.querySelector('.element-to-change').style.bottom("-48%");
+          this.alert("key board visible")
+      } else {
+          // Keyboard is likely hidden
+          document.querySelector('.element-to-change').style.bottom("-31%");
+          this.alert("key board Invisible")
+      }
+  });
