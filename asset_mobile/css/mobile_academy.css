@@ -2083,7 +2083,6 @@ input[type="number"] {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .mob_academy_send_btn button {
