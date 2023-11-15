@@ -259,3 +259,37 @@ closeButton2.addEventListener("click", toggleModal2);
 window.addEventListener("click", windowOnClick2);
 
 //message button click academy page ends
+
+
+//message button click academy page
+
+var modal3 = document.querySelector(".review-modal");
+var triggers3 = document.querySelectorAll(".trigger-review");
+var closeButton3 = document.querySelector(".close-button-3");
+
+function toggleModal3() {
+  modal3.classList.toggle("show-modal");
+
+  if(modal3.classList.contains("show-modal")){
+    document.body.classList.add('modal-open');
+  }else{
+    document.body.classList.remove('modal-open');
+  }
+
+}
+
+function windowOnClick3(event) {
+  if (event.target === modal3) {
+    toggleModal3();
+  }
+}
+
+for (var i = 0, len = triggers3.length; i < len; i++) {
+  triggers3[i].addEventListener("click", toggleModal3);
+}
+closeButton3.addEventListener("click", toggleModal3);
+
+window.addEventListener("click", windowOnClick3);
+
+//review academy page ends
+
