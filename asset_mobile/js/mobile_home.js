@@ -292,9 +292,9 @@ document
   window.addEventListener('resize', function() {
     if (document.activeElement.tagName === 'BODY') {
         // Keyboard is hidden, apply CSS changes
-        document.querySelector('#modal-msg-content').style.bottom("-31%");
+        document.querySelector('#modal-msg-content').style.backgroundColor("green");
     } else {
         // Keyboard is visible, remove CSS changes if applied
-        document.querySelector('#modal-msg-content').style.bottom("-48%");
+        document.querySelector('#modal-msg-content').style.backgroundColor("black");
     }
 });
