@@ -1941,18 +1941,6 @@ label {
 }
 
 /****** Style Star Rating Widget *****/
-.rate-star-modal input[type="radio"]:hover:not(:checked) + label {
-  background-color: transparent;
-  color: #dcdcdc;
-}
-
-fieldset,
-label {
-  margin: 0;
-  padding: 0;
-}
-
-/****** Style Star Rating Widget *****/
 
 .rating {
   border: none;
@@ -1968,6 +1956,7 @@ label {
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";
+  transition: color 0.3s ease; /* Adding transition to smooth color change */
 }
 
 .rating > .half:before {
@@ -1980,19 +1969,21 @@ label {
   float: right;
 }
 
-/* Immediate color change on click */
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label {
   color: #ffd700;
-}
-.rating > input:checked + label:hover,
+  transition: color 0.3s ease; /* Adding transition to smooth color change */
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label {
   color: #ffed85;
+  transition: color 0.3s ease; /* Adding transition to smooth color change */
 }
-
 
 /* Star Rating For Modal CSS End */
 /* Review Modal CSS End */
