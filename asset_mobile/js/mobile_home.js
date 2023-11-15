@@ -140,7 +140,7 @@ window.addEventListener("click", windowOnClick);
 
 //tabs click js
 
-window.onload = function() {
+window.onload = function () {
   profileTabClick();
 };
 
@@ -225,11 +225,15 @@ function photoTabClick() {
 //message button click academy page
 
 var modal2 = document.querySelector(".message-modal");
-var triggers2= document.querySelectorAll(".trigger-msg");
+var triggers2 = document.querySelectorAll(".trigger-msg");
 var closeButton2 = document.querySelector(".close-button-2");
 
 function toggleModal2() {
   modal2.classList.toggle("show-modal");
+
+  if (!modal2.classList.contains("show-modal")) {
+    resetModalPosition();
+  }
 }
 
 function windowOnClick2(event) {
@@ -243,33 +247,43 @@ for (var i = 0, len = triggers2.length; i < len; i++) {
 }
 closeButton2.addEventListener("click", toggleModal2);
 
-
 window.addEventListener("click", windowOnClick2);
 
 //message button click academy page ends
 
 //when focus on input js
+let isMobile = false;
 
-document.querySelector('.mob_name').addEventListener('focus', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
-});
-document.querySelector('.mob_name').addEventListener('blur', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
-});
+function detectMobile() {
+  isMobile = window.matchMedia("(max-width: 767px)").matches;
+}
 
-document.querySelector('.mob_phone').addEventListener('focus', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
-});
-document.querySelector('.mob_phone').addEventListener('blur', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
-});
+function adjustModalPosition() {
+  const modalContent = document.querySelector("#modal-msg-content");
+  if (isMobile) {
+    modalContent.style.bottom = "-48%"; // Adjust for mobile view
+  } else {
+    modalContent.style.bottom = "0"; // Reset for larger screens
+  }
+}
 
-document.querySelector('.mob_desc').addEventListener('focus', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
-});
-document.querySelector('.mob_desc').addEventListener('blur', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
-});
+function resetModalPosition() {
+  const modalContent = document.querySelector("#modal-msg-content");
+  modalContent.style.bottom = "-31%"; // Reset the modal's position
+}
 
+// Call detectMobile initially and listen for resize to detect changes
+detectMobile();
+window.addEventListener("resize", detectMobile);
 
-
+// Adjust the modal position on focus/blur of inputs
+document
+  .querySelectorAll(".mob_name, .mob_phone, .mob_desc")
+  .forEach(function (input) {
+    input.addEventListener("focus", function () {
+      adjustModalPosition();
+    });
+    input.addEventListener("blur", function () {
+      adjustModalPosition();
+    });
+  });
