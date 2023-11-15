@@ -236,11 +236,11 @@ function toggleModal2() {
   }
 }
 
-// function windowOnClick2(event) {
-//   if (event.target === modal2) {
-//     toggleModal2();
-//   }
-// }
+function windowOnClick2(event) {
+  if (event.target === modal2) {
+    toggleModal2();
+  }
+}
 
 for (var i = 0, len = triggers2.length; i < len; i++) {
   triggers2[i].addEventListener("click", toggleModal2);
@@ -263,7 +263,7 @@ function adjustModalPosition() {
   if (isMobile) {
     modalContent.style.bottom = "-48%"; // Adjust for mobile view
   } else {
-    modalContent.style.bottom = "-31%"; // Reset for larger screens
+    modalContent.style.bottom = "0"; // Reset for larger screens
   }
 }
 
@@ -272,12 +272,13 @@ function resetModalPosition() {
   modalContent.style.bottom = "-31%"; // Reset the modal's position
 }
 
+// Call detectMobile initially and listen for resize to detect changes
 detectMobile();
 window.addEventListener("resize", detectMobile);
 
 // Adjust the modal position on focus/blur of inputs
 document
-  .querySelectorAll(".mob_phone, .mob_desc, #mob_new_name")
+  .querySelectorAll("#mob_new_name, .mob_phone, .mob_desc")
   .forEach(function (input) {
     input.addEventListener("focus", function () {
       adjustModalPosition();
