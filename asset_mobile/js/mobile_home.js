@@ -263,7 +263,7 @@ function adjustModalPosition() {
   if (isMobile) {
     modalContent.style.bottom = "-48%"; // Adjust for mobile view
   } else {
-    modalContent.style.bottom = "0"; // Reset for larger screens
+    modalContent.style.bottom = "-31%"; // Reset for larger screens
   }
 }
 
@@ -272,7 +272,6 @@ function resetModalPosition() {
   modalContent.style.bottom = "-31%"; // Reset the modal's position
 }
 
-// Call detectMobile initially and listen for resize to detect changes
 detectMobile();
 window.addEventListener("resize", detectMobile);
 
