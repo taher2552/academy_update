@@ -296,10 +296,10 @@ document
       if (currentHeight > originalHeight) {
           // Keyboard is likely visible, do nothing or revert changes
           document.querySelector('.element-to-change').style.bottom("-48%");
-          this.alert("key board visible")
+          alert("key board visible..")
       } else {
           // Keyboard is likely hidden
           document.querySelector('.element-to-change').style.bottom("-31%");
-          this.alert("key board Invisible")
+          alert("key board Invisible")
       }
   });
