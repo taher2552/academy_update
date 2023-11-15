@@ -1948,6 +1948,11 @@ social-share--btn-2 {
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   z-index: 2;
 }
+
+.modal-open {
+  overflow: hidden !important;
+}
+
 .modal-content {
   max-width: 550px !important;
   width: 100%;

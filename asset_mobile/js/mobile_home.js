@@ -122,6 +122,12 @@ var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
   modal.classList.toggle("show-modal");
+
+  if(modal.classList.contains("show-modal")){
+    document.body.classList.add('modal-open');
+  }else{
+    document.body.classList.remove('modal-open');
+  }
 }
 
 function windowOnClick(event) {
@@ -231,6 +237,12 @@ var closeButton2 = document.querySelector(".close-button-2");
 function toggleModal2() {
   modal2.classList.toggle("show-modal");
 
+  if(modal2.classList.contains("show-modal")){
+    document.body.classList.add('modal-open');
+  }else{
+    document.body.classList.remove('modal-open');
+  }
+
 }
 
 function windowOnClick2(event) {
@@ -245,3 +257,5 @@ for (var i = 0, len = triggers2.length; i < len; i++) {
 closeButton2.addEventListener("click", toggleModal2);
 
 window.addEventListener("click", windowOnClick2);
+
+//message button click academy page ends
