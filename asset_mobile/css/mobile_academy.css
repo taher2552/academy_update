@@ -2048,6 +2048,19 @@ input:checked + .mob_switch_slider:before {
 /* Modal CSS End */
 
 
+/* tab switch  */
+
+.active {
+  background-color: #ffffff;
+  border-bottom: 2px solid #fe5c4d !important;
+  color: #fe5c4d;
+}
+
+
+
+/* tab switch ends */
+
+
 /* social media popup css ends */
 
 @media only screen and (max-width: 440px) {

@@ -137,3 +137,32 @@ closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 // Custom Modal JS End
+
+
+//tabs click js
+
+function feeTabClick() {
+  var element = document.querySelector(".mob_academy_box_wrapper");
+  var fee = document.querySelector("#nav-profile");
+  element.style.opacity = "0"; // Set opacity to 0 for fade out
+  fee.style.opacity="10";
+
+  setTimeout(function() {
+    element.style.display = "none"; 
+    fee.style.display = "block";
+  }, 500);
+}
+function profileTabClick() {
+  var element = document.querySelector("#nav-profile");
+  var profile = document.querySelector(".mob_academy_box_wrapper");
+  element.style.opacity = "0"; // Set opacity to 0 for fade out
+  profile.style.opacity = "10"; 
+
+  setTimeout(function() {
+    element.style.display = "none"; 
+    profile.style.display = "block"; 
+  }, 500); 
+}
+
+
+//tabs click js ends

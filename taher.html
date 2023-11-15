@@ -96,18 +96,35 @@
         <div class="mob_academy_tabs">
 
             <div class="mob_academy_tab_list">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <ul>
-                    <li class="mob_academy_active_tab">Profile</li>
-                    <li>Fee</li>
+                    <li  class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true" onclick="profileTabClick()">Profile</li>
+                    <li
+                    class="nav-link"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false" onclick="feeTabClick()">Fee</li>
                     <li>Training</li>
                     <li>Photos</li>
                 </ul>
+                </div>
             </div>
 
         </div>
 
 
-        <div class="mob_academy_box_wrapper">
+        <div class="mob_academy_box_wrapper tab-pane fade active show">
 
             <div class="mob_academy_box">
 
@@ -778,6 +795,106 @@
 
 
     <!-- social media modal ends -->
+
+
+    <!-- fee tab  -->
+    <div
+    class="fade"
+    id="nav-profile"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+  <section class="academy_mobile_container">
+    <div class="mobile_bannner_section">
+    <div class="mob_academy_box_wrapper">
+
+        <div class="mob_academy_box">
+
+            <div class="mob_academy_fee_box">
+                <p class="mob_academy_fee_heading">New Batch</p>
+            </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">5-7 yrs</span>
+                        </div>
+
+                    </div>
+                  
+                 </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Weekly Days</span>
+                    <div class="mob_age_box mob_academy_days">
+                        <span class="mob_age_box_yrs">Mon-Wed-Fri</span>
+                    </div>
+                 </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Timings</span>
+
+                    <div class="mob_age_flex">
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">10AM-12PM</span>
+                        </div>
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">12PM-02PM</span>
+                        </div>
+                    </div>
+                  
+                 </div>
+        </div>
+        <div class="mob_academy_box">
+
+            <div class="mob_academy_fee_box">
+                <p class="mob_academy_fee_heading">Weekly Batch</p>
+            </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Age Group</span>
+
+                    <div class="mob_age_flex">
+
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">5-7 yrs</span>
+                        </div>
+
+                    </div>
+                  
+                 </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Weekly Days</span>
+                    <div class="mob_age_box mob_academy_days">
+                        <span class="mob_age_box_yrs">Mon-Wed-Fri</span>
+                    </div>
+                 </div>
+
+                 <div class="mob_academy_age_grp">
+                    <span class="mob_academy_age">Timings</span>
+
+                    <div class="mob_age_flex">
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">10AM-12PM</span>
+                        </div>
+                        <div class="mob_age_box">
+                            <span class="mob_age_box_yrs">12PM-02PM</span>
+                        </div>
+                    </div>
+                  
+                 </div>
+        </div>
+
+
+
+    </div>
+</section>
+  </div>
+    <!-- fee tab ends -->
     </section>
 
 
