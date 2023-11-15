@@ -288,18 +288,19 @@ document
     });
   });
 
-  let originalHeight = window.innerHeight;
+  let hiddenKeyboard = false;
 
-  window.addEventListener('resize', function() {
-      const currentHeight = window.innerHeight;
-
-      if (currentHeight > originalHeight) {
-          // Keyboard is likely visible, do nothing or revert changes
-          document.querySelector('.element-to-change').style.bottom("-48%");
-          alert("key board visible..")
+  document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'visible') {
+          if (hiddenKeyboard) {
+              document.querySelector('.element-to-change').classList.remove('keyboard-hidden');
+              hiddenKeyboard = false;
+              alert("hello")
+          }
       } else {
-          // Keyboard is likely hidden
-          document.querySelector('.element-to-change').style.bottom("-31%");
-          alert("key board Invisible")
+          // Visibility change to 'hidden', possibly due to keyboard dismissal
+          document.querySelector('.element-to-change').classList.add('keyboard-hidden');
+          hiddenKeyboard = true;
+          alert("hyy")
       }
   });
