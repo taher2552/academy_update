@@ -231,9 +231,6 @@ var closeButton2 = document.querySelector(".close-button-2");
 function toggleModal2() {
   modal2.classList.toggle("show-modal");
 
-  if (!modal2.classList.contains("show-modal")) {
-    resetModalPosition();
-  }
 }
 
 function windowOnClick2(event) {
