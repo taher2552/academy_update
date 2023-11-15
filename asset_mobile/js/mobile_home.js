@@ -278,7 +278,7 @@ window.addEventListener("resize", detectMobile);
 
 // Adjust the modal position on focus/blur of inputs
 document
-  .querySelectorAll(".mob_academy_msg_input, .mob_phone, .mob_desc")
+  .querySelectorAll(".mob_phone, .mob_desc, #mob_new_name")
   .forEach(function (input) {
     input.addEventListener("focus", function () {
       adjustModalPosition();
