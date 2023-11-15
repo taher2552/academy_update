@@ -247,3 +247,10 @@ closeButton2.addEventListener("click", toggleModal2);
 window.addEventListener("click", windowOnClick2);
 
 //message button click academy page ends
+
+//when focus on input js
+
+document.querySelector('.mob_academy_msg_input').addEventListener('focus', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-43%'; // Change color to red (example)
+});
+//when focus on input jsends
