@@ -250,15 +250,26 @@ window.addEventListener("click", windowOnClick2);
 
 //when focus on input js
 
-// Assuming 'resize' event triggers when the keyboard appears
-window.addEventListener('focus', function() {
-  if (window.innerHeight < window.outerHeight) {
-      // Keyboard is open
-      document.querySelector('#modal-msg-content').style.bottom = '-48%';
-  } else {
-      // Keyboard is closed
-      document.querySelector('#modal-msg-content').style.bottom = '0';
-  }
+document.querySelector('.mob_name').addEventListener('focus', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
+});
+document.querySelector('.mob_name').addEventListener('blur', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
 });
 
-//when focus on input jsends
+document.querySelector('.mob_phone').addEventListener('focus', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
+});
+document.querySelector('.mob_phone').addEventListener('blur', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
+});
+
+document.querySelector('.mob_desc').addEventListener('focus', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
+});
+document.querySelector('.mob_desc').addEventListener('blur', function() {
+  document.querySelector('#modal-msg-content').style.bottom = '-31%'; 
+});
+
+
+

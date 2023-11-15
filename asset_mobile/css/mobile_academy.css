@@ -13,7 +13,7 @@
   --mobile_academy_star_background: #fc0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -1573,7 +1573,6 @@ flex-shrink:0;
   padding: 1rem;
 }
 
-
 /* 
 .mobile_login_check {
   width: 100%;
@@ -1618,7 +1617,6 @@ flex-shrink:0;
   left: 0;
   background: #e73725;
 } */
-
 
 .mobile_login_label_checkbox p {
   font-size: 14px;
@@ -1684,7 +1682,6 @@ flex-shrink:0;
   display: block;
 }
 
-
 /* Styles for the checkbox container */
 .mobile_login_checkbox {
   position: absolute;
@@ -1721,8 +1718,6 @@ flex-shrink:0;
 .mobile_login_label_checkbox input:checked + .mobile_login_checkbox::after {
   display: block;
 }
-
-
 
 /* slider css  */
 
@@ -1912,10 +1907,10 @@ input:checked + .mob_switch_slider:before {
   letter-spacing: 0.41px;
 }
 
-.mob_apply_filter{
+.mob_apply_filter {
   border-radius: 0.3125rem;
-  background: #FE5C4D;
-  color:#fff;
+  background: #fe5c4d;
+  color: #fff;
   font-family: DM Sans;
   font-size: 0.75rem;
   font-style: normal;
@@ -1926,14 +1921,12 @@ input:checked + .mob_switch_slider:before {
   letter-spacing: 0.41px;
 }
 
-
 /* filter page ends */
-
 
 /* social media popup css  */
 
-
-.social-share--btn , social-share--btn-2 {
+.social-share--btn,
+social-share--btn-2 {
   border: none;
   font-family: inherit;
   transition: filter 0.15s ease-in-out;
@@ -1941,7 +1934,8 @@ input:checked + .mob_switch_slider:before {
   background-color: transparent;
 }
 
-.social-modal , .message-modal{
+.social-modal,
+.message-modal {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1959,12 +1953,12 @@ input:checked + .mob_switch_slider:before {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom:-16.5%;
-  left:50%;
+  bottom: -16.5%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1rem;
- height: 165px !important;
+  height: 165px !important;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1975,8 +1969,8 @@ input:checked + .mob_switch_slider:before {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom:-31%;
-  left:50%;
+  bottom: -31%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1rem;
@@ -1986,8 +1980,8 @@ input:checked + .mob_switch_slider:before {
   -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-.close-button, .close-button-2 {
+.close-button,
+.close-button-2 {
   width: 1.5rem;
   font-size: 1.2em;
   line-height: 1;
@@ -2015,15 +2009,15 @@ input:checked + .mob_switch_slider:before {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-
-.share-modal--content , .share-modal--content-2{
+.share-modal--content,
+.share-modal--content-2 {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-around;
 }
 
-.share-modal--content .social-icons{
+.share-modal--content .social-icons {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -2037,8 +2031,6 @@ input:checked + .mob_switch_slider:before {
   gap: 6px;
 }
 
-
-
 .icons img {
   width: 30px;
   height: 30px;
@@ -2051,7 +2043,8 @@ input:checked + .mob_switch_slider:before {
   text-transform: capitalize;
 }
 
-.share-modal--content h3 , .share-modal--content-2 h3  {
+.share-modal--content h3,
+.share-modal--content-2 h3 {
   font-size: 18px;
   font-weight: 600;
   color: #222222;
@@ -2059,14 +2052,14 @@ input:checked + .mob_switch_slider:before {
   margin-bottom: 25px;
 }
 
-.mob_academy_msg_input{
-  padding:0.8rem;
+.mob_academy_msg_input {
+  padding: 0.8rem;
   border-radius: 0.3125rem;
-border: 1px solid #DCDCDC;
-background: #FFF;
-width: 100%;
-margin-bottom: 1rem;
-outline: none;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -2076,38 +2069,37 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.mob_academy_send_btn{
+.mob_academy_send_btn {
   display: flex;
   justify-content: end;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.mob_academy_send_btn button{
+.mob_academy_send_btn button {
   display: flex;
   justify-content: center;
   align-items: center;
   color: White;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-weight: 500;
-padding: 0.4rem 0.9rem;
-border-radius: 0.1875rem;
-background:#FE5C4D;
-outline: none;
-border: none;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.1875rem;
+  background: #fe5c4d;
+  outline: none;
+  border: none;
 }
 
-.mob_academy_send_btn button img{
+.mob_academy_send_btn button img {
   margin-left: 0.3rem;
 }
 
 /* Modal CSS End */
-
 
 /* tab switch  */
 
@@ -2117,10 +2109,7 @@ border: none;
   color: #fe5c4d;
 }
 
-
-
 /* tab switch ends */
-
 
 /* social media popup css ends */
 
@@ -2254,3 +2243,4 @@ border: none;
     flex-direction: column;
   }
 }
+
