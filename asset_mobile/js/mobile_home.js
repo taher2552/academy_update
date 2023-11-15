@@ -251,6 +251,6 @@ window.addEventListener("click", windowOnClick2);
 //when focus on input js
 
 document.querySelector('.mob_academy_msg_input').addEventListener('focus', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-48%'; // Change color to red (example)
+  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
 });
 //when focus on input jsends
