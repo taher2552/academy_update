@@ -99,24 +99,19 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <ul>
                     <li  class="nav-link active"
-                    id="nav-home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-home"
-                    aria-selected="true" onclick="profileTabClick()">Profile</li>
-                    <li
-                    class="nav-link"
-                id="nav-profile-tab"
+                    data-bs-toggle="tab"  onclick="profileTabClick()">Profile</li>
+
+                    <li class="nav-link"
                 data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false" onclick="feeTabClick()">Fee</li>
-                    <li>Training</li>
-                    <li>Photos</li>
+                 onclick="feeTabClick()">Fee</li>
+
+                    <li class="nav-link"
+                    data-bs-toggle="tab"
+                     onclick="trainingTabClick()">Training</li>
+
+                    <li class="nav-link"
+                    data-bs-toggle="tab"
+                     onclick="photoTabClick()">Photos</li>
                 </ul>
                 </div>
             </div>
@@ -124,7 +119,7 @@
         </div>
 
 
-        <div class="mob_academy_box_wrapper tab-pane fade active show">
+        <div class="mob_academy_box_wrapper tab-pane fade show">
 
             <div class="mob_academy_box">
 
@@ -199,7 +194,7 @@
                     </div>
 
                     <div class="mob_call_msg">
-                        <button class="mob_message_btn"> <img src="asset_mobile/images/message.svg"
+                        <button class="mob_message_btn trigger-msg"> <img src="asset_mobile/images/message.svg"
                                 alt="">Message</button>
                         <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
                     </div>
@@ -275,7 +270,7 @@
                     </div>
 
                     <div class="mob_call_msg">
-                        <button class="mob_message_btn"> <img src="asset_mobile/images/message.svg"
+                        <button class="mob_message_btn trigger-msg"> <img src="asset_mobile/images/message.svg"
                                 alt="">Message</button>
                         <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
                     </div>
@@ -800,9 +795,7 @@
     <!-- fee tab  -->
     <div
     class="fade"
-    id="nav-profile"
-    role="tabpanel"
-    aria-labelledby="nav-profile-tab"
+    id="fee-tab"
   >
   <section class="academy_mobile_container">
     <div class="mobile_bannner_section">
@@ -895,6 +888,126 @@
 </section>
   </div>
     <!-- fee tab ends -->
+
+    <!-- trainig tab starts  -->
+
+    <div
+    class="fade"
+    id="training-tab"
+  >
+
+    <section class="academy_mobile_container">
+
+        <div class=" mob_academy_box_wrapper">
+
+                        <div class="mob_academy_box">
+
+                            <div class="mob_academy_fee_box">
+                                <p class="mob_academy_fee_heading">Technical</p>
+                            </div>
+
+                            <div>
+                                <p class="mob_academy_training_box">Technical assessment mainly involves skills and
+                                    technique like Passing (short and long range), Controlling, Attacking, Tackling,
+                                    Defensive duties</p>
+                            </div>
+                        </div>
+
+                        <div class="mob_academy_box">
+
+                            <div class="mob_academy_fee_box">
+                                <p class="mob_academy_fee_heading">Physical</p>
+                            </div>
+
+                            <div>
+                                <p class="mob_academy_training_box">Speed, Flexibility, Strength, Endurance, Agility.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mob_academy_box">
+
+                            <div class="mob_academy_fee_box">
+                                <p class="mob_academy_fee_heading">Psychological</p>
+                            </div>
+
+                            <div>
+                                <p class="mob_academy_training_box">Team bonding, Team play, Helping others, Moral and
+                                    Social values taught individually and during play.</p>
+                            </div>
+                        </div>
+
+            </div>
+
+
+    </section>
+
+    </div>
+
+    <!-- trainig tab starts ends -->
+
+
+    <!-- top photo tab starts here  -->
+
+    <div
+    class="fade"
+    id="photo-tab"
+  >
+
+  
+  <section class="academy_mobile_container">
+    <div class="mob_academy_box_wrapper">
+
+
+            <div class="mob_academy_tabs">
+
+                <div class="mob_academy_tab_list mob_academy_all_list mob_academy_photo_tab">
+                    <ul>
+                        <li class="mob_academy_active_tab">Photos</li>
+                        <li>Videos</li>
+                        <li>Training Photos</li>
+                        <li>Tournaments</li>
+                    </ul>
+                </div>
+
+                <div class="mob_card_photo">
+                    <img src="asset_mobile/images/mob_img_1.png" alt="">
+                </div>
+                <div class="mob_card_photo">
+                    <img src="asset_mobile/images/mob_img_2.png" alt="">
+                </div>
+                <div class="mob_card_photo">
+                    <img src="asset_mobile/images/mob_img_3.png" alt="">
+                </div>
+                <div class="mob_card_photo">
+                    <img src="asset_mobile/images/mob_img_4.png" alt="">
+                </div>
+
+            </div>
+
+
+    </div>
+
+</section>
+
+    </div>
+    <!-- top photo tab ends here  -->
+
+
+    <!-- message modal starts  -->
+
+    <div class="message-modal">
+        <div id="modal-msg-content">
+          <span class="close-button-2">x</span>
+          <div class="share-modal--content-2">
+            <h3>Message To Kuljeet Academy</h3>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- message modal starts ends -->
     </section>
 
 

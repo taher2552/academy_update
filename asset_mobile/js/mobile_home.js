@@ -138,31 +138,112 @@ window.addEventListener("click", windowOnClick);
 
 // Custom Modal JS End
 
-
 //tabs click js
 
-function feeTabClick() {
-  var element = document.querySelector(".mob_academy_box_wrapper");
-  var fee = document.querySelector("#nav-profile");
-  element.style.opacity = "0"; // Set opacity to 0 for fade out
-  fee.style.opacity="10";
+window.onload = function() {
+  profileTabClick();
+};
 
-  setTimeout(function() {
-    element.style.display = "none"; 
+function profileTabClick() {
+  var fee = document.querySelector("#fee-tab");
+  var profile = document.querySelector(".mob_academy_box_wrapper");
+  var training = document.querySelector("#training-tab");
+  var photo = document.querySelector("#photo-tab");
+
+  fee.style.opacity = "0";
+  profile.style.opacity = "1";
+  training.style.opacity = "0";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    fee.style.display = "none";
+    profile.style.display = "block";
+    training.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
+}
+
+function feeTabClick() {
+  var profile = document.querySelector(".mob_academy_box_wrapper");
+  var fee = document.querySelector("#fee-tab");
+  var training = document.querySelector("#training-tab");
+  var photo = document.querySelector("#photo-tab");
+
+  profile.style.opacity = "0";
+  training.style.opacity = "0";
+  fee.style.opacity = "1";
+  photo.style.opacity = "10";
+
+  setTimeout(function () {
+    profile.style.display = "none";
+    training.style.display = "none";
+    photo.style.display = "none";
     fee.style.display = "block";
   }, 500);
 }
-function profileTabClick() {
-  var element = document.querySelector("#nav-profile");
-  var profile = document.querySelector(".mob_academy_box_wrapper");
-  element.style.opacity = "0"; // Set opacity to 0 for fade out
-  profile.style.opacity = "10"; 
 
-  setTimeout(function() {
-    element.style.display = "none"; 
-    profile.style.display = "block"; 
-  }, 500); 
+function trainingTabClick() {
+  var training = document.querySelector("#training-tab");
+  var profile = document.querySelector(".mob_academy_box_wrapper");
+  var fee = document.querySelector("#fee-tab");
+  var photo = document.querySelector("#photo-tab");
+
+  training.style.opacity = "1";
+  profile.style.opacity = "0";
+  fee.style.opacity = "0";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    training.style.display = "block";
+    profile.style.display = "none";
+    fee.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
 }
 
+function photoTabClick() {
+  var training = document.querySelector("#training-tab");
+  var profile = document.querySelector(".mob_academy_box_wrapper");
+  var fee = document.querySelector("#fee-tab");
+  var photo = document.querySelector("#photo-tab");
+
+  training.style.opacity = "0";
+  profile.style.opacity = "0";
+  fee.style.opacity = "0";
+  photo.style.opacity = "1";
+
+  setTimeout(function () {
+    training.style.display = "none";
+    profile.style.display = "none";
+    fee.style.display = "none";
+    photo.style.display = "block";
+  }, 500);
+}
 
 //tabs click js ends
+
+//message button click academy page
+
+var modal2 = document.querySelector(".message-modal");
+var triggers2= document.querySelectorAll(".trigger-msg");
+var closeButton2 = document.querySelector(".close-button-2");
+
+function toggleModal2() {
+  modal2.classList.toggle("show-modal");
+}
+
+function windowOnClick2(event) {
+  if (event.target === modal2) {
+    toggleModal2();
+  }
+}
+
+for (var i = 0, len = triggers2.length; i < len; i++) {
+  triggers2[i].addEventListener("click", toggleModal2);
+}
+closeButton2.addEventListener("click", toggleModal2);
+
+
+window.addEventListener("click", windowOnClick2);
+
+//message button click academy page ends
