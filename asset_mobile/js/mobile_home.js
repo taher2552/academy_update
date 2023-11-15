@@ -232,8 +232,7 @@ function toggleModal2() {
   modal2.classList.toggle("show-modal");
 
   if (!modal2.classList.contains("show-modal")) {
-    const modalContent = document.querySelector('#modal-msg-content');
-    modalContent.style.bottom = '-31%'; // Reset modal position
+    resetModalPosition();
   }
 }
 
@@ -253,25 +252,38 @@ window.addEventListener("click", windowOnClick2);
 //message button click academy page ends
 
 //when focus on input js
-let focusedInput = null;
+let isMobile = false;
 
-function adjustModalPosition() {
-    const modalContent = document.querySelector('#modal-msg-content');
-    if (focusedInput) {
-        modalContent.style.bottom = '-48%'; // Adjust for input focus
-    } else {
-        modalContent.style.bottom = '-31%'; // Reset for no input focus
-    }
+function detectMobile() {
+  isMobile = window.matchMedia("(max-width: 767px)").matches;
 }
 
-document.querySelectorAll('.mob_name, .mob_phone, .mob_desc').forEach(function(input) {
-    input.addEventListener('focus', function() {
-        focusedInput = input;
-        adjustModalPosition();
-    });
-    input.addEventListener('blur', function() {
-        focusedInput = null;
-        adjustModalPosition();
-    });
-});
+function adjustModalPosition() {
+  const modalContent = document.querySelector("#modal-msg-content");
+  if (isMobile) {
+    modalContent.style.bottom = "-48%"; // Adjust for mobile view
+  } else {
+    modalContent.style.bottom = "0"; // Reset for larger screens
+  }
+}
 
+function resetModalPosition() {
+  const modalContent = document.querySelector("#modal-msg-content");
+  modalContent.style.bottom = "-31%"; // Reset the modal's position
+}
+
+// Call detectMobile initially and listen for resize to detect changes
+detectMobile();
+window.addEventListener("resize", detectMobile);
+
+// Adjust the modal position on focus/blur of inputs
+document
+  .querySelectorAll(".mob_name, .mob_phone, .mob_desc")
+  .forEach(function (input) {
+    input.addEventListener("focus", function () {
+      adjustModalPosition();
+    });
+    input.addEventListener("blur", function () {
+      adjustModalPosition();
+    });
+  });
