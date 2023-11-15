@@ -1975,7 +1975,7 @@ input:checked + .mob_switch_slider:before {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom:-16.5%;
+  bottom:-32%;
   left:50%;
   transform: translate(-50%, -50%);
   background-color: white;
