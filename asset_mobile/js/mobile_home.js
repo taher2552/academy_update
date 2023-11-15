@@ -236,18 +236,18 @@ function toggleModal2() {
   }
 }
 
-function windowOnClick2(event) {
-  if (event.target === modal2) {
-    toggleModal2();
-  }
-}
+// function windowOnClick2(event) {
+//   if (event.target === modal2) {
+//     toggleModal2();
+//   }
+// }
 
 for (var i = 0, len = triggers2.length; i < len; i++) {
   triggers2[i].addEventListener("click", toggleModal2);
 }
 closeButton2.addEventListener("click", toggleModal2);
 
-window.addEventListener("click", windowOnClick2);
+// window.addEventListener("click", windowOnClick2);
 
 //message button click academy page ends
 
