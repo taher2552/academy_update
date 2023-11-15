@@ -250,7 +250,15 @@ window.addEventListener("click", windowOnClick2);
 
 //when focus on input js
 
-document.querySelector('.mob_academy_msg_input').addEventListener('focus', function() {
-  document.querySelector('#modal-msg-content').style.bottom = '-48%'; 
+// Assuming 'resize' event triggers when the keyboard appears
+window.addEventListener('focus', function() {
+  if (window.innerHeight < window.outerHeight) {
+      // Keyboard is open
+      document.querySelector('#modal-msg-content').style.bottom = '-48%';
+  } else {
+      // Keyboard is closed
+      document.querySelector('#modal-msg-content').style.bottom = '0';
+  }
 });
+
 //when focus on input jsends
