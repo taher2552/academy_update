@@ -123,10 +123,10 @@ var closeButton = document.querySelector(".close-button");
 function toggleModal() {
   modal.classList.toggle("show-modal");
 
-  if(modal.classList.contains("show-modal")){
-    document.body.classList.add('modal-open');
-  }else{
-    document.body.classList.remove('modal-open');
+  if (modal.classList.contains("show-modal")) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
   }
 }
 
@@ -237,12 +237,11 @@ var closeButton2 = document.querySelector(".close-button-2");
 function toggleModal2() {
   modal2.classList.toggle("show-modal");
 
-  if(modal2.classList.contains("show-modal")){
-    document.body.classList.add('modal-open');
-  }else{
-    document.body.classList.remove('modal-open');
+  if (modal2.classList.contains("show-modal")) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
   }
-
 }
 
 function windowOnClick2(event) {
@@ -260,7 +259,6 @@ window.addEventListener("click", windowOnClick2);
 
 //message button click academy page ends
 
-
 //message button click academy page
 
 var modal3 = document.querySelector(".review-modal");
@@ -270,12 +268,11 @@ var closeButton3 = document.querySelector(".close-button-3");
 function toggleModal3() {
   modal3.classList.toggle("show-modal");
 
-  if(modal3.classList.contains("show-modal")){
-    document.body.classList.add('modal-open');
-  }else{
-    document.body.classList.remove('modal-open');
+  if (modal3.classList.contains("show-modal")) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
   }
-
 }
 
 function windowOnClick3(event) {
@@ -293,9 +290,10 @@ window.addEventListener("click", windowOnClick3);
 
 //review academy page ends
 
+// sscroll to top js
 
-// stars in review js 
+document.getElementById("scrollToTop").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
-
-// stars in review js ends
-
+// scroll to top js ends
