@@ -236,11 +236,11 @@ function toggleModal2() {
   }
 }
 
-// function windowOnClick2(event) {
-//   if (event.target === modal2) {
-//     toggleModal2();
-//   }
-// }
+function windowOnClick2(event) {
+  if (event.target === modal2) {
+    toggleModal2();
+  }
+}
 
 for (var i = 0, len = triggers2.length; i < len; i++) {
   triggers2[i].addEventListener("click", toggleModal2);
@@ -249,58 +249,42 @@ closeButton2.addEventListener("click", toggleModal2);
 
 // window.addEventListener("click", windowOnClick2);
 
-//message button click academy page ends
+// //message button click academy page ends
 
-//when focus on input js
-let isMobile = false;
+// //when focus on input js
+// let isMobile = false;
 
-function detectMobile() {
-  isMobile = window.matchMedia("(max-width: 767px)").matches;
-}
+// function detectMobile() {
+//   isMobile = window.matchMedia("(max-width: 767px)").matches;
+// }
 
-function adjustModalPosition() {
-  const modalContent = document.querySelector("#modal-msg-content");
-  if (isMobile) {
-    modalContent.style.bottom = "-48%"; // Adjust for mobile view
-  } else {
-    modalContent.style.bottom = "0"; // Reset for larger screens
-  }
-}
+// function adjustModalPosition() {
+//   const modalContent = document.querySelector("#modal-msg-content");
+//   if (isMobile) {
+//     modalContent.style.bottom = "-48%"; // Adjust for mobile view
+//   } else {
+//     modalContent.style.bottom = "0"; // Reset for larger screens
+//   }
+// }
 
-function resetModalPosition() {
-  const modalContent = document.querySelector("#modal-msg-content");
-  modalContent.style.bottom = "-31%"; // Reset the modal's position
-}
+// function resetModalPosition() {
+//   const modalContent = document.querySelector("#modal-msg-content");
+//   modalContent.style.bottom = "-31%"; // Reset the modal's position
+// }
 
-// Call detectMobile initially and listen for resize to detect changes
-detectMobile();
-window.addEventListener("resize", detectMobile);
+// // Call detectMobile initially and listen for resize to detect changes
+// detectMobile();
+// window.addEventListener("resize", detectMobile);
 
-// Adjust the modal position on focus/blur of inputs
-document
-  .querySelectorAll("#mob_new_name, .mob_phone, .mob_desc")
-  .forEach(function (input) {
-    input.addEventListener("focus", function () {
-      adjustModalPosition();
-    });
-    input.addEventListener("blur", function () {
-      adjustModalPosition();
-    });
-  });
+// // Adjust the modal position on focus/blur of inputs
+// document
+//   .querySelectorAll("#mob_new_name, .mob_phone, .mob_desc")
+//   .forEach(function (input) {
+//     input.addEventListener("focus", function () {
+//       adjustModalPosition();
+//     });
+//     input.addEventListener("blur", function () {
+//       adjustModalPosition();
+//     });
+//   });
 
-  let hiddenKeyboard = false;
-
-  document.addEventListener('visibilitychange', function() {
-      if (document.visibilityState === 'visible') {
-          if (hiddenKeyboard) {
-              document.querySelector('.element-to-change').classList.remove('keyboard-hidden');
-              hiddenKeyboard = false;
-              alert("hello")
-          }
-      } else {
-          // Visibility change to 'hidden', possibly due to keyboard dismissal
-          document.querySelector('.element-to-change').classList.add('keyboard-hidden');
-          hiddenKeyboard = true;
-          alert("hyy")
-      }
-  });
