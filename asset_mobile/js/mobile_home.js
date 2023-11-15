@@ -293,3 +293,9 @@ window.addEventListener("click", windowOnClick3);
 
 //review academy page ends
 
+
+// stars in review js 
+
+
+// stars in review js ends
+
