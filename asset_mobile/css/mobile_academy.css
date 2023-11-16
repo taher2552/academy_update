@@ -267,6 +267,7 @@ flex-shrink:0;
   line-height: normal;
   letter-spacing: -0.02563rem;
   text-transform: capitalize;
+  margin-right: 0.3rem;
 }
 
 .mob_academy_star {
@@ -351,6 +352,10 @@ flex-shrink:0;
   margin-right: 1.5rem;
   padding-bottom: 0.1rem;
   cursor: pointer;
+}
+
+.mob_list_li{
+  font-size: 0.7rem !important;
 }
 
 .mob_academy_tab_list ul li:last-child {
