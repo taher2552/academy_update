@@ -8,10 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -21,7 +18,7 @@
     <!-- <link rel="stylesheet" href="asset_mobile/css/style.css"> -->
 
 
-      
+
 
 
 </head>
@@ -52,23 +49,23 @@
 
 
     <section class="academy_mobile_container">
+
+        <!-- top banner section  -->
+
+
         <div class="mobile_bannner_section">
 
             <div class="mobile_academy_banner">
                 <div class="image_slider">
-                    <a href="asset_mobile/images/new_banner.jpeg"
-                    data-fancybox="gallery0">
-                    <img src="asset_mobile/images/new_banner.jpeg"
-                        alt="" />
-                </a>
+                    <a href="asset_mobile/images/new_banner.jpeg" data-fancybox="gallery0">
+                        <img src="asset_mobile/images/new_banner.jpeg" alt="" />
+                    </a>
 
-                <a href="asset_mobile/images/inner-banner.jpg"
-                data-fancybox="gallery0">
-                <img src="asset_mobile/images/inner-banner.jpg"
-                    alt="" />
-            </a>
+                    <a href="asset_mobile/images/inner-banner.jpg" data-fancybox="gallery0">
+                        <img src="asset_mobile/images/inner-banner.jpg" alt="" />
+                    </a>
                 </div>
-                
+
 
                 <div class="mobile_academy_wrapper">
                     <div class="mobile_academy_logo">
@@ -119,6 +116,10 @@
             </div>
         </div>
 
+        <!-- top banner section ends  -->
+
+        <!-- top tabs  -->
+
         <div class="mob_academy_tabs">
 
             <div class="mob_academy_tab_list">
@@ -137,13 +138,16 @@
 
         </div>
 
+        <!-- top tabs ends  -->
+
+        <!-- profile tab contents  -->
 
         <div class="mob_academy_box_wrapper tab-pane fade show">
 
             <div class="mob_academy_box">
 
                 <div class="mob_academy_fee_box">
-                    <p class="mob_academy_fee_heading">Fee & Batches</p>
+                    <p class="mob_academy_fee_heading">Fee Status</p>
                 </div>
 
                 <div class="mob_academy_fee_list">
@@ -296,11 +300,19 @@
                 </div>
 
                 <div class="mob_academy_verify_content">
-                    <div>
+                    <div class="mob_academy_grey_tick">
                         <img src="asset_mobile/images/grey_tick.svg" alt="">
-                        <p>vinay.chopra@rpsg.in</p>
+                        <p class="mob_academy_grey_email">vinay.chopra@rpsg.in</p>
                     </div>
-                    
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/grey_tick.svg" alt="">
+                        <p class="mob_academy_grey_email">+91 7412589325</p>
+                    </div>
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/grey_tick.svg" alt="">
+                        <p class="mob_academy_grey_email">https://www.kjacademy.com</p>
+                    </div>
+
                 </div>
 
 
@@ -355,43 +367,147 @@
                 <div class="mob_academy_tabs">
 
                     <div class="mob_academy_tab_list mob_academy_all_list">
-                        <ul>
-                            <li class="mob_academy_active_tab">All(20)</li>
-                            <li>Videos(8)</li>
-                            <li>Training Photos(5)</li>
-                        </ul>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <ul>
+                                <li class="active" data-bs-toggle="tab" onclick="profilePhotoClick()">Photos(20)</li>
+                                <li class="" data-bs-toggle="tab" onclick="profileVideoClick()">Videos(8)</li>
+                                <li class="" data-bs-toggle="tab" onclick="profileTrainingClick()">Training(5)</li>
+                                <li class="" data-bs-toggle="tab" onclick="profileTournamentClick()">Tournament(5)</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="mob_card_pic">
-                        <a href="asset_mobile/images/mob_img_1.png"
-                    data-fancybox="gallery0">
-                    <img src="asset_mobile/images/mob_img_1.png"
-                        alt="" />
-                </a>
+                    <!-- profile photo tab content  -->
+
+                    <div class="fade" id="profile_photo_div">
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="mob_card_pic">
-                        <a href="asset_mobile/images/mob_img_2.png"
-                        data-fancybox="gallery0">
-                        <img src="asset_mobile/images/mob_img_2.png"
-                            alt="" />
-                    </a>
+                    <!-- profile photo tab content ends  -->
+
+                    <!-- profile video tab content  -->
+
+                    <div class="fade" id="profile_video_div">
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="mob_card_pic">
-                        <a href="asset_mobile/images/mob_img_3.png"
-                        data-fancybox="gallery0">
-                        <img src="asset_mobile/images/mob_img_3.png"
-                            alt="" />
-                    </a>
+                    <!-- profile video tab content ends  -->
+
+                    <!-- profile training tab content  -->
+
+                    <div class="fade" id="profile_training_div">
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                            </a>
+                        </div>
+
+
+
+
                     </div>
-                    <div class="mob_card_pic">
-                        <a href="asset_mobile/images/mob_img_4.png"
-                        data-fancybox="gallery0">
-                        <img src="asset_mobile/images/mob_img_4.png"
-                            alt="" />
-                    </a>
+
+                    <!-- profile training tab content ends  -->
+
+                    <!-- profile tournamnet tab content  -->
+
+                    <div class="fade" id="profile_tournament_div">
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="mob_card_pic">
+                            <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                            </a>
+                        </div>
+
+
                     </div>
+
+                    <!-- profile tournamnets tab content ends  -->
+
+
 
                 </div>
 
@@ -792,51 +908,7 @@
 
         </div>
 
-        <!-- social media modal  -->
-
-        <div class="social-modal">
-            <div class="modal-content">
-                <span class="close-button">x</span>
-                <div class="share-modal--content">
-                    <h3>share academy profile</h3>
-                    <div class="social-icons">
-                        <a href="#">
-                            <div class="icons new_icon">
-                                <img src="asset_mobile/images/mfb.svg" alt="" />
-                                <span>facebook</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="icons new_icon">
-                                <img src="asset_mobile/images/minsta.svg" alt="" />
-                                <span>instagram</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="icons new_icon">
-                                <img src="asset_mobile/images/mwhtaps.svg" alt="" />
-                                <span>whatsapp</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="icons new_icon">
-                                <img src="asset_mobile/images/mlinkd.svg" alt="" />
-                                <span>linkedIn</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="icons new_icon">
-                                <img src="asset_mobile/images/mcopy.svg" alt="" />
-                                <span>copy link</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- social media modal ends -->
+        <!-- profile tab contents ends  -->
 
 
         <!-- fee tab  -->
@@ -999,42 +1071,146 @@
                     <div class="mob_academy_tabs">
 
                         <div class="mob_academy_tab_list mob_academy_all_list mob_academy_photo_tab">
-                            <ul>
-                                <li class="mob_academy_active_tab">Photos</li>
-                                <li>Videos</li>
-                                <li>Training Photos</li>
-                                <li>Tournaments</li>
+                            <div class="mob_photo_tab_ul" id="nav-tab" role="tablist">
+                            <ul class="mob_tab_ul">
+                                <li class="active mob_tab_li" data-bs-toggle="tab" onclick="photoTabPhotoClick()">Photos</li>
+                                <li class="mob_tab_li" data-bs-toggle="tab" onclick="photoTabVideoClick()">Videos</li>
+                                <li class="mob_tab_li" data-bs-toggle="tab" onclick="photoTabTrainingClick()">Training</li>
+                                <li class="mob_tab_li" data-bs-toggle="tab" onclick="photoTabTournamentClick()">Tournament</li>
                             </ul>
+                            </div>
+                            </div>
                         </div>
 
-                        <div class="mob_card_photo">
-                            <a href="asset_mobile/images/mob_img_1.png"
-                            data-fancybox="gallery0">
-                            <img src="asset_mobile/images/mob_img_1.png"
-                                alt="" />
-                        </a>
+                        <!-- Photo tab inside photo tab content  -->
+
+                        <div class="fade" id="photo_photo_div">
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="mob_card_photo">
-                            <a href="asset_mobile/images/mob_img_2.png"
-                            data-fancybox="gallery0">
-                            <img src="asset_mobile/images/mob_img_2.png"
-                                alt="" />
-                        </a>
+
+                        <!-- Photo tab inside photo tab content  ends  -->
+
+                        <!-- Photo tab inside video tab content  -->
+
+                        <div class="fade" id="photo_video_div">
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="mob_card_photo">
-                            <a href="asset_mobile/images/mob_img_3.png"
-                            data-fancybox="gallery0">
-                            <img src="asset_mobile/images/mob_img_3.png"
-                                alt="" />
-                        </a>
+
+                        <!-- Photo tab inside video tab content  ends  -->
+
+                        <!-- Photo tab inside training tab content   -->
+
+                        <div class="fade" id="photo_training_div">
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                                </a>
+                            </div>
+
+
+
+
                         </div>
-                        <div class="mob_card_photo">
-                            <a href="asset_mobile/images/mob_img_4.png"
-                            data-fancybox="gallery0">
-                            <img src="asset_mobile/images/mob_img_4.png"
-                                alt="" />
-                        </a>
+
+                        <!-- Photo tab inside training tab content  ends  -->
+
+                        <!-- Photo tab inside tournament tab content   -->
+
+                        <div class="fade" id="photo_tournament_div">
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_2.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_2.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_1.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_1.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_4.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_4.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="mob_card_pic">
+                                <a href="asset_mobile/images/mob_img_3.png" data-fancybox="gallery0">
+                                    <img src="asset_mobile/images/mob_img_3.png" alt="" />
+                                </a>
+                            </div>
+
+
                         </div>
+
+                        <!-- Photo tab inside tournament tab content ends   -->
 
                     </div>
 
@@ -1045,6 +1221,53 @@
 
         </div>
         <!-- top photo tab ends here  -->
+
+
+        <!-- social media modal  -->
+
+        <div class="social-modal">
+            <div class="modal-content">
+                <span class="close-button">x</span>
+                <div class="share-modal--content">
+                    <h3>share academy profile</h3>
+                    <div class="social-icons">
+                        <a href="#">
+                            <div class="icons new_icon">
+                                <img src="asset_mobile/images/mfb.svg" alt="" />
+                                <span>facebook</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icons new_icon">
+                                <img src="asset_mobile/images/minsta.svg" alt="" />
+                                <span>instagram</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icons new_icon">
+                                <img src="asset_mobile/images/mwhtaps.svg" alt="" />
+                                <span>whatsapp</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icons new_icon">
+                                <img src="asset_mobile/images/mlinkd.svg" alt="" />
+                                <span>linkedIn</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icons new_icon">
+                                <img src="asset_mobile/images/mcopy.svg" alt="" />
+                                <span>copy link</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- social media modal ends -->
 
 
         <!-- message modal starts  -->
@@ -1119,10 +1342,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
 
         <!-- Review modal starts ends -->
     </section>
@@ -1209,24 +1428,24 @@
         </div>
 
     </footer>
-    
+
     <script src="asset_mobile/js/mobile_home.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
-            
-        <script>
-            Fancybox.bind("[data-fancybox]", {
-                // Your custom options
-            });
-                </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 
-            
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+
+
+
 
 
 </body>

@@ -148,6 +148,9 @@ window.addEventListener("click", windowOnClick);
 
 window.onload = function () {
   profileTabClick();
+  profilePhotoClick();
+  photoTabPhotoClick();
+
 };
 
 function profileTabClick() {
@@ -329,6 +332,175 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // academy banner slider js ends
+
+
+//profile images tab js
+
+function profilePhotoClick() {
+  var photo = document.querySelector("#profile_photo_div");
+  var video = document.querySelector("#profile_video_div");
+  var training = document.querySelector("#profile_training_div");
+  var tournament = document.querySelector("#profile_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "0";
+  training.style.opacity = "0";
+  photo.style.opacity = "1";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "none";
+    training.style.display = "none";
+    photo.style.display = "block";
+  }, 500);
+}
+
+
+function profileVideoClick() {
+  var photo = document.querySelector("#profile_photo_div");
+  var video = document.querySelector("#profile_video_div");
+  var training = document.querySelector("#profile_training_div");
+  var tournament = document.querySelector("#profile_tournament_div");
+
+  video.style.opacity = "1";
+  tournament.style.opacity = "0";
+  training.style.opacity = "0";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    video.style.display = "block";
+    tournament.style.display = "none";
+    training.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+
+function profileTrainingClick() {
+  var photo = document.querySelector("#profile_photo_div");
+  var video = document.querySelector("#profile_video_div");
+  var training = document.querySelector("#profile_training_div");
+  var tournament = document.querySelector("#profile_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "0";
+  training.style.opacity = "1";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "none";
+    training.style.display = "block";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+
+function profileTournamentClick() {
+  var photo = document.querySelector("#profile_photo_div");
+  var video = document.querySelector("#profile_video_div");
+  var training = document.querySelector("#profile_training_div");
+  var tournament = document.querySelector("#profile_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "1";
+  training.style.opacity = "0";
+  photo.style.opacity = "1";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "block";
+    training.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+//profile images tab js ends
+
+// photos tab images tab click js 
+
+function photoTabPhotoClick() {
+  var photo = document.querySelector("#photo_photo_div");
+  var video = document.querySelector("#photo_video_div");
+  var training = document.querySelector("#photo_training_div");
+  var tournament = document.querySelector("#photo_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "0";
+  training.style.opacity = "0";
+  photo.style.opacity = "1";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "none";
+    training.style.display = "none";
+    photo.style.display = "block";
+  }, 500);
+}
+
+
+function photoTabVideoClick() {
+  var photo = document.querySelector("#photo_photo_div");
+  var video = document.querySelector("#photo_video_div");
+  var training = document.querySelector("#photo_training_div");
+  var tournament = document.querySelector("#photo_tournament_div");
+
+  video.style.opacity = "1";
+  tournament.style.opacity = "0";
+  training.style.opacity = "0";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    video.style.display = "block";
+    tournament.style.display = "none";
+    training.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+
+function photoTabTrainingClick() {
+  var photo = document.querySelector("#photo_photo_div");
+  var video = document.querySelector("#photo_video_div");
+  var training = document.querySelector("#photo_training_div");
+  var tournament = document.querySelector("#photo_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "0";
+  training.style.opacity = "1";
+  photo.style.opacity = "0";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "none";
+    training.style.display = "block";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+
+function photoTabTournamentClick() {
+  var photo = document.querySelector("#photo_photo_div");
+  var video = document.querySelector("#photo_video_div");
+  var training = document.querySelector("#photo_training_div");
+  var tournament = document.querySelector("#photo_tournament_div");
+
+  video.style.opacity = "0";
+  tournament.style.opacity = "1";
+  training.style.opacity = "0";
+  photo.style.opacity = "1";
+
+  setTimeout(function () {
+    video.style.display = "none";
+    tournament.style.display = "block";
+    training.style.display = "none";
+    photo.style.display = "none";
+  }, 500);
+  
+}
+
+
+// photos tab images tab click js ends
 
 
 
