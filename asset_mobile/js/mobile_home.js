@@ -297,3 +297,39 @@ document.getElementById("scrollToTop").onclick = function () {
 };
 
 // scroll to top js ends
+
+// academy banner slider js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const imageSlider = document.querySelector('.image_slider');
+  const leftArrow = document.querySelector('.left_arrow');
+  const rightArrow = document.querySelector('.right_arrow');
+  let currentImageIndex = 0;
+
+  function showImage(index) {
+      const images = imageSlider.querySelectorAll('img');
+      for (let i = 0; i < images.length; i++) {
+          images[i].style.display = 'none';
+      }
+      images[index].style.display = 'block';
+  }
+
+  leftArrow.addEventListener('click', function() {
+      currentImageIndex = (currentImageIndex - 1 + imageSlider.children.length) % imageSlider.children.length;
+      showImage(currentImageIndex);
+  });
+
+  rightArrow.addEventListener('click', function() {
+      currentImageIndex = (currentImageIndex + 1) % imageSlider.children.length;
+      showImage(currentImageIndex);
+  });
+
+  // Show the initial image
+  showImage(currentImageIndex);
+});
+
+// academy banner slider js ends
+
+
+
+

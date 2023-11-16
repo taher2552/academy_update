@@ -34,7 +34,7 @@ a {
 .mobile_home_right_side {
   display: flex;
   justify-content: end;
-  align-items: end;
+  align-items: center;
 }
 .mobile_home_right_side button {
   margin-right: 1rem;
@@ -152,7 +152,7 @@ a {
 
 .mobile_academy_banner img {
   max-width: 100%;
-  height: auto;
+  height: 220px;
   padding-bottom: 3rem;
   z-index: -1000;
 }
@@ -386,10 +386,7 @@ flex-shrink:0;
   border-bottom: 1px solid #dcdcdc;
   margin-bottom: 0.5rem;
 }
-.mob_academy_fee_box_2 {
-  padding: 1rem;
-  padding-bottom: 0;
-}
+
 
 .mob_academy_fee_list ul {
   list-style: none;
@@ -2017,7 +2014,6 @@ social-share--btn-2 {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.share-modal--content,
 .share-modal--content-2,
 .share-modal--content-3 {
   display: flex;
@@ -2025,6 +2021,15 @@ social-share--btn-2 {
   text-align: center;
   justify-content: space-around;
 }
+
+.share-modal--content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 
 .share-modal--content .social-icons {
   display: flex;
@@ -2182,6 +2187,17 @@ label {
 
 /* star in review modal ends */
 
+.left_arrow{
+  z-index:10;
+}
+.right_arrow{
+  z-index:10;
+}
+
+
+
+
+
 @media only screen and (max-width: 440px) {
   .mobile_academy_input {
     width: 300px;
@@ -2304,11 +2320,6 @@ label {
     align-items: center;
   }
 
-  .share-modal--content {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-}
+
+
+
