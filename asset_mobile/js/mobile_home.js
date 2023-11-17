@@ -497,7 +497,8 @@ function photoTabTournamentClick() {
 function downloadAsPDF() {
   const element = document.getElementById('content');
    
-  document.querySelector(".mob_footer_fix").style.display="none";
+  document.querySelector(".mob_footer_fix").style.opacity="0";
+  document.querySelector(".mob_blog_top_icon").style.opacity="0";
   
   
 
@@ -519,7 +520,8 @@ function downloadAsPDF() {
     pdf.save('webpage.pdf');
   });
 
-  document.querySelector(".mob_footer_fix").style.display="block";
+  document.querySelector(".mob_footer_fix").style.opacity="1";
+  document.querySelector(".mob_blog_top_icon").style.opacity="1";
 }
 
 // Add event listener to the button click
