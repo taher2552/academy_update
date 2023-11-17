@@ -2475,4 +2475,59 @@ label {
   width: 100%;
 }
 
+.detect_location{
+color:#FE5C4D;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-weight: 600;
+margin-left: 0.3rem;
+}
+
+.location_flex{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+}
+
+.popular_city_heading{
+  color:#222;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.5625rem; 
+text-transform: capitalize;
+margin-left: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.menu_city_name{
+  color:#505050;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+text-transform: capitalize;
+}
+
+.mob_city_relative{
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.city_list{
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* side navbar ends */
