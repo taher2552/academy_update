@@ -531,6 +531,7 @@ document.getElementById("downloadPdf").addEventListener("click", downloadAsPDF);
 // hamberger click js
 
 function Nav() {
+
   var width = document.getElementById("mySidenav").style.width;
   if (width === "0px" || width == "") {
     document.getElementById("mySidenav").style.width = "100%";

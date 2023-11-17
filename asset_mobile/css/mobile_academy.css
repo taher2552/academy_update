@@ -83,6 +83,11 @@ a {
   margin: 0 auto;
 }
 
+.mySidenav{
+  width: 550px;
+  margin: 0 auto;
+}
+
 .mobile_academy_header {
   max-width: 550px;
   margin: 0 auto;
