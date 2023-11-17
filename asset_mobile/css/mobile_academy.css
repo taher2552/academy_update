@@ -2426,11 +2426,14 @@ label {
 
 .city_page {
   display: none;
+
 }
 
 .menu_content,
 .city_page {
   transition: width 0.3s ease-in-out; /* Adjust timing and easing as needed */
+  position: fixed;
+  width: 100%;
 }
 
 .city_text {
@@ -2562,5 +2565,9 @@ padding-top: 0.8rem;
 padding-bottom: 0.8rem;
 margin-left: -2rem;
 margin-right: 1rem;
+}
+
+.india_city_list ul li:last-child{
+  border-bottom: 1px solid transparent;
 }
 /* side navbar ends */
