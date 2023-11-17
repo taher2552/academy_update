@@ -2271,6 +2271,8 @@ label {
   .mob_message_btn {
     margin-right: 0.5rem;
   }
+
+
 }
 
 @media only screen and (max-width: 365px) {
@@ -2442,7 +2444,7 @@ label {
 
 .arrow_back_city {
   margin-left: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -2457,7 +2459,7 @@ label {
   display: flex;
   align-items: center;
   border: 1px solid #dcdcdc;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
   border-radius: 0.3125rem;
   background: #fff;
@@ -2530,4 +2532,35 @@ text-transform: capitalize;
   flex-wrap: wrap;
 }
 
+.other_cities{
+  color:#FE5C4D;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+margin-left: 1rem;
+}
+
+.india_city_list{
+  margin-left: 1rem;
+  height: 25vh;
+  overflow: auto;
+}
+
+.india_city_list ul{
+  list-style: none;
+}
+
+.india_city_list ul li{
+  color: #AAA;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+border-bottom: 1px solid #dcdcdc;
+padding-top: 0.8rem;
+padding-bottom: 0.8rem;
+margin-left: -2rem;
+margin-right: 1rem;
+}
 /* side navbar ends */
