@@ -492,12 +492,17 @@ function photoTabTournamentClick() {
 }
 
 // photos tab images tab click js ends
+
+
 function downloadAsPDF() {
   const element = document.getElementById('content');
 
+  
+  
+
   // Use html2canvas to capture the visible part of the page as an image
   html2canvas(element, { scrollY: -window.scrollY }).then(canvas => {
-    const imageData = canvas.toDataURL('image/jpeg'); // Get image data
+    const imageData = canvas.toDataURL('image/jpeg', 1.0); // Get image data
 
     // Initialize jsPDF
     const pdf = new window.jspdf.jsPDF({
