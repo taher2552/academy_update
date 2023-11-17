@@ -492,27 +492,27 @@ function photoTabTournamentClick() {
 }
 
 // photos tab images tab click js ends
-
-// html to pfd download js
-
 function downloadAsPDF() {
-  // Select the HTML element you want to convert
-  const element = document.getElementById("content");
+  const element = document.getElementById('content');
 
-  // Options for PDF generation (optional)
-  const opt = {
-    margin: 10,
-    filename: "generated.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-  };
+  // Use html2canvas to capture the visible part of the page as an image
+  html2canvas(element, { scrollY: -window.scrollY }).then(canvas => {
+    const imageData = canvas.toDataURL('image/jpeg'); // Get image data
 
-  // Call html2pdf library function
-  html2pdf().from(element).set(opt).save();
+    // Initialize jsPDF
+    const pdf = new window.jspdf.jsPDF({
+      orientation: 'portrait',
+      unit: 'px',
+      format: [canvas.width, canvas.height]
+    });
+
+    // Add image to the PDF
+    pdf.addImage(imageData, 'JPEG', 0, 0, canvas.width, canvas.height);
+    
+    // Save the PDF file
+    pdf.save('webpage.pdf');
+  });
 }
 
 // Add event listener to the button click
-document.getElementById("downloadPdf").addEventListener("click", downloadAsPDF);
-
-// html to pfd download js ends
+document.getElementById('downloadPdf').addEventListener('click', downloadAsPDF);
