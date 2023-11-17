@@ -13,64 +13,64 @@ mobile_academy_progressDone.forEach((mobile_academy_progress) => {
 
 // caraousel js on home page
 
-document.addEventListener("DOMContentLoaded", function () {
-  var currentIndex = 0;
-  var items = document.querySelectorAll(".carousel-item");
-  var dots = document.querySelectorAll(".dot");
-  var touchStartX = 0;
-  var touchEndX = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   var currentIndex = 0;
+//   var items = document.querySelectorAll(".carousel-item");
+//   var dots = document.querySelectorAll(".dot");
+//   var touchStartX = 0;
+//   var touchEndX = 0;
 
-  function showItem(index) {
-    items.forEach(function (item) {
-      item.style.display = "none";
-    });
-    dots.forEach(function (dot) {
-      dot.classList.remove("active");
-    });
-    items[index].style.display = "block";
-    dots[index].classList.add("active");
-  }
+//   function showItem(index) {
+//     items.forEach(function (item) {
+//       item.style.display = "none";
+//     });
+//     dots.forEach(function (dot) {
+//       dot.classList.remove("active");
+//     });
+//     items[index].style.display = "block";
+//     dots[index].classList.add("active");
+//   }
 
-  function nextItem() {
-    currentIndex = (currentIndex + 1) % items.length;
-    showItem(currentIndex);
-  }
+//   function nextItem() {
+//     currentIndex = (currentIndex + 1) % items.length;
+//     showItem(currentIndex);
+//   }
 
-  function prevItem() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showItem(currentIndex);
-  }
+//   function prevItem() {
+//     currentIndex = (currentIndex - 1 + items.length) % items.length;
+//     showItem(currentIndex);
+//   }
 
-  function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-  }
+//   function handleTouchStart(event) {
+//     touchStartX = event.touches[0].clientX;
+//   }
 
-  function handleTouchMove(event) {
-    touchEndX = event.touches[0].clientX;
-  }
+//   function handleTouchMove(event) {
+//     touchEndX = event.touches[0].clientX;
+//   }
 
-  function handleTouchEnd() {
-    var deltaX = touchEndX - touchStartX;
-    if (deltaX > 50) {
-      prevItem();
-    } else if (deltaX < -50) {
-      nextItem();
-    }
-  }
+//   function handleTouchEnd() {
+//     var deltaX = touchEndX - touchStartX;
+//     if (deltaX > 50) {
+//       prevItem();
+//     } else if (deltaX < -50) {
+//       nextItem();
+//     }
+//   }
 
-  dots.forEach(function (dot, index) {
-    dot.addEventListener("click", function () {
-      currentIndex = index;
-      showItem(currentIndex);
-    });
-  });
+//   dots.forEach(function (dot, index) {
+//     dot.addEventListener("click", function () {
+//       currentIndex = index;
+//       showItem(currentIndex);
+//     });
+//   });
 
-  document.addEventListener("touchstart", handleTouchStart, false);
-  document.addEventListener("touchmove", handleTouchMove, false);
-  document.addEventListener("touchend", handleTouchEnd, false);
+//   document.addEventListener("touchstart", handleTouchStart, false);
+//   document.addEventListener("touchmove", handleTouchMove, false);
+//   document.addEventListener("touchend", handleTouchEnd, false);
 
-  setInterval(nextItem, 5000);
-});
+//   setInterval(nextItem, 5000);
+// });
 
 // caraousel js home page ends
 
@@ -542,3 +542,27 @@ function Nav() {
 
 
 // hamberger click js ends
+
+
+//select your city click js 
+ 
+function selectCity() {
+  const selectCity = document.querySelector(".menu_content");
+  const cityPage = document.querySelector(".city_page");
+
+  // Get the computed style of selectCity
+  const selectCityDisplay = window.getComputedStyle(selectCity).getPropertyValue("display");
+
+  if (selectCityDisplay === "block") {
+    selectCity.style.display = "none";
+    cityPage.style.display = "block";
+  } else {
+    selectCity.style.display = "block";
+    cityPage.style.display = "none";
+  }
+}
+
+  
+
+
+//select your city click js ends

@@ -202,7 +202,6 @@ a {
   z-index: 1;
 } */
 
-
 .mobile_academy_wrapper {
   position: absolute;
   left: 8%;
@@ -238,8 +237,9 @@ a {
   top: 30%;
 }
 
-.left_arrow, .right_arrow{
-  z-index:10;
+.left_arrow,
+.right_arrow {
+  z-index: 10;
 }
 
 .academy_arrow_white_1 img {
@@ -268,8 +268,7 @@ a {
   margin-right: 1rem;
 }
 
-
-.mob_academy_search_icon{
+.mob_academy_search_icon {
   margin-right: 0.5rem;
   margin-left: -0.3rem;
 }
@@ -342,8 +341,6 @@ a {
   margin-top: 1rem;
 }
 
-
-
 .mob_academy_tab_list ul {
   display: flex;
   list-style: none;
@@ -369,7 +366,7 @@ a {
   cursor: pointer;
 }
 
-.mob_list_li{
+.mob_list_li {
   font-size: 0.7rem !important;
 }
 
@@ -392,12 +389,10 @@ a {
   padding: 1rem;
 }
 
-.mob_tab_ul .mob_tab_li{
+.mob_tab_ul .mob_tab_li {
   background-color: #f0f2f5 !important ;
   font-size: 0.7rem !important;
 }
-
-
 
 .mob_academy_box {
   background-color: #fff;
@@ -419,7 +414,6 @@ a {
   border-bottom: 1px solid #dcdcdc;
   margin-bottom: 1rem;
 }
-
 
 .mob_academy_fee_list ul {
   list-style: none;
@@ -708,7 +702,7 @@ a {
   font-weight: 600;
 }
 
-.mob_academy_grey_tick{
+.mob_academy_grey_tick {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -725,12 +719,11 @@ a {
   margin-left: 0.3rem;
 }
 
-.mob_academy_grey_tick p{
-  margin-bottom:0;
+.mob_academy_grey_tick p {
+  margin-bottom: 0;
 }
 
-.mob_academy_grey_tick img{
-  
+.mob_academy_grey_tick img {
 }
 
 .mob_call_brochure {
@@ -2070,7 +2063,6 @@ social-share--btn-2 {
   flex-direction: column;
 }
 
-
 .share-modal--content .social-icons {
   display: flex;
   flex-wrap: nowrap;
@@ -2214,8 +2206,7 @@ label {
   color: #ffd700; /* Change the color immediately upon click */
 }
 
-
-.mob_academy_gold_star{
+.mob_academy_gold_star {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2223,15 +2214,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-
-
 /* star in review modal ends */
-
-
-
-
-
-
 
 @media only screen and (max-width: 440px) {
   .mobile_academy_input {
@@ -2354,9 +2337,7 @@ label {
     justify-content: center;
     align-items: center;
   }
-
 }
-
 
 /* side navbar  */
 
@@ -2377,7 +2358,7 @@ label {
 }
 
 .sidenav a {
-  padding-left:1rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
   text-decoration: none;
   font-size: 16px;
@@ -2387,70 +2368,111 @@ label {
   transition: 0.3s;
 }
 
-.sidenav a:first-child{
+.sidenav a:first-child {
   margin-top: 1rem;
 }
 
-
-
-.small_academy_logo{
+.small_academy_logo {
   background-color: #fff;
   border: 1px solid #dcdcdc;
   border-radius: 50%;
   padding: 0.2rem 0.7rem;
 }
 
-.small_academy_logo img{
+.small_academy_logo img {
   width: 0.8125rem;
-height: 0.9375rem;
+  height: 0.9375rem;
 }
 
-
-.side_menu_top{
+.side_menu_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#F4F4F4;
+  background-color: #f4f4f4;
   padding: 1rem;
 }
 
-.side_menu_academy_name p{
-  color:#222;
-font-family: DM Sans;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-text-transform: capitalize;
-margin-left: 0.5rem;
-position: absolute;
-top:10%;
-width: 220px;
+.side_menu_academy_name p {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  position: absolute;
+  top: 10%;
+  width: 220px;
 }
 
-.side_menu_academy_name{
+.side_menu_academy_name {
   position: relative;
 }
 
-.side_top_flex{
+.side_top_flex {
   display: grid;
   grid-template-columns: 1fr auto;
 }
 
-.side_menu_city{
+.side_menu_city {
   display: flex;
   justify-content: start;
   align-items: center;
   padding: 1rem;
-  border-bottom:1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
 }
 
+.city_page {
+  display: none;
+}
 
+.menu_content,
+.city_page {
+  transition: width 0.3s ease-in-out; /* Adjust timing and easing as needed */
+}
 
+.city_text {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+}
 
+.arrow_back_city {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
+.menu_content{
+  display: block;
+}
 
+/* Container for the search input */
+.city_search_container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3125rem;
+  background: #fff;
+}
 
+/* Styles for the search icon */
+.city_search_icon {
+  padding-right: 0.5rem; /* Adjust spacing between icon and input */
+}
+
+/* Style for the input */
+.city_search_input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
 
 /* side navbar ends */
-
-
