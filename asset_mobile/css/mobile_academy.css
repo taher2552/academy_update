@@ -2377,8 +2377,8 @@ label {
 }
 
 .sidenav a {
-  padding-left:0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left:1rem;
+  padding-bottom: 1rem;
   text-decoration: none;
   font-size: 16px;
   text-transform: capitalize;
@@ -2387,12 +2387,17 @@ label {
   transition: 0.3s;
 }
 
+.sidenav a:first-child{
+  margin-top: 1rem;
+}
+
 
 
 .small_academy_logo{
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
 }
 
 .small_academy_logo img{
@@ -2408,6 +2413,39 @@ height: 0.9375rem;
   background-color:#F4F4F4;
   padding: 1rem;
 }
+
+.side_menu_academy_name p{
+  color:#222;
+font-family: DM Sans;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+text-transform: capitalize;
+margin-left: 0.5rem;
+position: absolute;
+top:10%;
+width: 220px;
+}
+
+.side_menu_academy_name{
+  position: relative;
+}
+
+.side_top_flex{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.side_menu_city{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  border-bottom:1px solid #dcdcdc;
+}
+
+
+
 
 
 
