@@ -150,7 +150,6 @@ window.onload = function () {
   profileTabClick();
   profilePhotoClick();
   photoTabPhotoClick();
-
 };
 
 function profileTabClick() {
@@ -303,28 +302,30 @@ document.getElementById("scrollToTop").onclick = function () {
 
 // academy banner slider js
 
-document.addEventListener("DOMContentLoaded", function() {
-  const imageSlider = document.querySelector('.image_slider');
-  const leftArrow = document.querySelector('.left_arrow');
-  const rightArrow = document.querySelector('.right_arrow');
+document.addEventListener("DOMContentLoaded", function () {
+  const imageSlider = document.querySelector(".image_slider");
+  const leftArrow = document.querySelector(".left_arrow");
+  const rightArrow = document.querySelector(".right_arrow");
   let currentImageIndex = 0;
 
   function showImage(index) {
-      const images = imageSlider.querySelectorAll('img');
-      for (let i = 0; i < images.length; i++) {
-          images[i].style.display = 'none';
-      }
-      images[index].style.display = 'block';
+    const images = imageSlider.querySelectorAll("img");
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+    }
+    images[index].style.display = "block";
   }
 
-  leftArrow.addEventListener('click', function() {
-      currentImageIndex = (currentImageIndex - 1 + imageSlider.children.length) % imageSlider.children.length;
-      showImage(currentImageIndex);
+  leftArrow.addEventListener("click", function () {
+    currentImageIndex =
+      (currentImageIndex - 1 + imageSlider.children.length) %
+      imageSlider.children.length;
+    showImage(currentImageIndex);
   });
 
-  rightArrow.addEventListener('click', function() {
-      currentImageIndex = (currentImageIndex + 1) % imageSlider.children.length;
-      showImage(currentImageIndex);
+  rightArrow.addEventListener("click", function () {
+    currentImageIndex = (currentImageIndex + 1) % imageSlider.children.length;
+    showImage(currentImageIndex);
   });
 
   // Show the initial image
@@ -332,7 +333,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // academy banner slider js ends
-
 
 //profile images tab js
 
@@ -355,7 +355,6 @@ function profilePhotoClick() {
   }, 500);
 }
 
-
 function profileVideoClick() {
   var photo = document.querySelector("#profile_photo_div");
   var video = document.querySelector("#profile_video_div");
@@ -373,7 +372,6 @@ function profileVideoClick() {
     training.style.display = "none";
     photo.style.display = "none";
   }, 500);
-  
 }
 
 function profileTrainingClick() {
@@ -393,7 +391,6 @@ function profileTrainingClick() {
     training.style.display = "block";
     photo.style.display = "none";
   }, 500);
-  
 }
 
 function profileTournamentClick() {
@@ -413,11 +410,10 @@ function profileTournamentClick() {
     training.style.display = "none";
     photo.style.display = "none";
   }, 500);
-  
 }
 //profile images tab js ends
 
-// photos tab images tab click js 
+// photos tab images tab click js
 
 function photoTabPhotoClick() {
   var photo = document.querySelector("#photo_photo_div");
@@ -438,7 +434,6 @@ function photoTabPhotoClick() {
   }, 500);
 }
 
-
 function photoTabVideoClick() {
   var photo = document.querySelector("#photo_photo_div");
   var video = document.querySelector("#photo_video_div");
@@ -456,7 +451,6 @@ function photoTabVideoClick() {
     training.style.display = "none";
     photo.style.display = "none";
   }, 500);
-  
 }
 
 function photoTabTrainingClick() {
@@ -476,7 +470,6 @@ function photoTabTrainingClick() {
     training.style.display = "block";
     photo.style.display = "none";
   }, 500);
-  
 }
 
 function photoTabTournamentClick() {
@@ -496,12 +489,30 @@ function photoTabTournamentClick() {
     training.style.display = "none";
     photo.style.display = "none";
   }, 500);
-  
 }
-
 
 // photos tab images tab click js ends
 
+// html to pfd download js
 
+function downloadAsPDF() {
+  // Select the HTML element you want to convert
+  const element = document.getElementById("content");
 
+  // Options for PDF generation (optional)
+  const opt = {
+    margin: 10,
+    filename: "generated.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+  };
 
+  // Call html2pdf library function
+  html2pdf().from(element).set(opt).save();
+}
+
+// Add event listener to the button click
+document.getElementById("downloadPdf").addEventListener("click", downloadAsPDF);
+
+// html to pfd download js ends

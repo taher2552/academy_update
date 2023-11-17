@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
     <link rel="stylesheet" href="asset_mobile/css/mobile_footer.css">
     <link rel="stylesheet" href="asset_mobile/css/mobile_academy.css">
     <!-- <link rel="stylesheet" href="asset_mobile/css/style.css"> -->
@@ -23,7 +25,7 @@
 
 </head>
 
-<body>
+<body id="content">
 
     <section class="mobile_top_header">
         <div class="mobile_home_top_header">
@@ -153,7 +155,7 @@
             <div class="mob_academy_box">
 
                 <div class="mob_academy_fee_box">
-                    <p class="mob_academy_fee_heading">Fee Status</p>
+                    <p class="mob_academy_fee_heading">Fee & Batches</p>
                 </div>
 
                 <div class="mob_academy_fee_list">
@@ -213,8 +215,7 @@
             <div class="mob_academy_box">
 
                 <div class="mob_academy_fee_box mob_academy_fee_status">
-                    <p class="mob_academy_fee_heading">Fee Status</p>
-                    <p class="hour_mob">₹600<span>/hour</span></p>
+                    <p class="mob_academy_fee_heading">Fee & Batches</p>
                 </div>
 
                 <div class="">
@@ -333,7 +334,7 @@
                     </div>
 
                     <div class="mob_call_msg">
-                        <button class="mob_call_btn mob_call_brochure"> <img src="asset_mobile/images/mob_download.svg"
+                        <button class="mob_call_btn mob_call_brochure" id="downloadPdf"> <img src="asset_mobile/images/mob_download.svg"
                                 alt="">Download Brochure</button>
                     </div>
                 </div>
@@ -1449,6 +1450,7 @@
             // Your custom options
         });
     </script>
+
 
 
 
