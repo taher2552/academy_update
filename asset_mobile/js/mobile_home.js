@@ -493,40 +493,7 @@ function photoTabTournamentClick() {
 
 // photos tab images tab click js ends
 
-// download broucher
 
-function downloadAsPDF() {
-  const element = document.getElementById("content");
-
-  document.querySelector(".mob_footer_fix").style.opacity = "0";
-  document.querySelector(".mob_blog_top_icon").style.opacity = "0";
-
-  // Use html2canvas to capture the visible part of the page as an image
-  html2canvas(element, { scrollY: -window.scrollY }).then((canvas) => {
-    const imageData = canvas.toDataURL("image/jpeg", 1.0); // Get image data
-
-    // Initialize jsPDF
-    const pdf = new window.jspdf.jsPDF({
-      orientation: "portrait",
-      unit: "px",
-      format: [canvas.width, canvas.height],
-    });
-
-    // Add image to the PDF
-    pdf.addImage(imageData, "JPEG", 0, 0, canvas.width, canvas.height);
-
-    // Save the PDF file
-    pdf.save("webpage.pdf");
-  });
-
-  document.querySelector(".mob_footer_fix").style.opacity = "1";
-  document.querySelector(".mob_blog_top_icon").style.opacity = "1";
-}
-
-// Add event listener to the button click
-document.getElementById("downloadPdf").addEventListener("click", downloadAsPDF);
-
-// download broucher ends
 
 // hamberger click js
 
