@@ -2424,6 +2424,11 @@ label {
   border-bottom: 1px solid #dcdcdc;
 }
 
+.mob_side_menu{
+ position: fixed;
+ z-index: 1000;
+}
+
 .city_page {
   display: none;
 
@@ -2432,7 +2437,6 @@ label {
 .menu_content,
 .city_page {
   transition: width 0.3s ease-in-out; /* Adjust timing and easing as needed */
-  position: fixed;
   width: 100%;
 }
 
