@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow: auto; /* Enable scrolling by default */
+}
+
+
 /* header css  */
 
 .mobile_top_header {
@@ -2425,8 +2430,8 @@ label {
 }
 
 .mob_side_menu{
- overflow: hidden;
  z-index: 1000;
+ overflow: hidden;
 }
 
 .city_page {
@@ -2521,6 +2526,11 @@ font-style: normal;
 font-weight: 500;
 text-transform: capitalize;
 }
+
+.menu-open {
+  overflow: hidden; /* Disable scrolling when menu is open */
+}
+
 
 .mob_city_relative{
   margin-right: 1.25rem;

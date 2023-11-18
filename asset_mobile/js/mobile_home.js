@@ -531,6 +531,8 @@ document.getElementById("downloadPdf").addEventListener("click", downloadAsPDF);
 // hamberger click js
 
 function Nav() {
+  var body = document.querySelector("body");
+  body.classList.toggle("menu-open");
 
   var width = document.getElementById("mySidenav").style.width;
   if (width === "0px" || width == "") {
@@ -540,18 +542,18 @@ function Nav() {
   }
 }
 
-
 // hamberger click js ends
 
+//select your city click js
 
-//select your city click js 
- 
 function selectCity() {
   const selectCity = document.querySelector(".menu_content");
   const cityPage = document.querySelector(".city_page");
 
   // Get the computed style of selectCity
-  const selectCityDisplay = window.getComputedStyle(selectCity).getPropertyValue("display");
+  const selectCityDisplay = window
+    .getComputedStyle(selectCity)
+    .getPropertyValue("display");
 
   if (selectCityDisplay === "block") {
     selectCity.style.display = "none";
@@ -561,8 +563,5 @@ function selectCity() {
     cityPage.style.display = "none";
   }
 }
-
-  
-
 
 //select your city click js ends
