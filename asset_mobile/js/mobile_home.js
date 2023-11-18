@@ -565,3 +565,45 @@ function selectCity() {
 }
 
 //select your city click js ends
+
+//search side box js
+
+function searchIconClick() {
+  var body = document.querySelector("body");
+  document.querySelector(".search_side_input").value='';
+  document.querySelector(".popular_search_section").style.display="block";
+  document.querySelector(".search_result_section").style.display="none";
+
+
+  body.classList.toggle("menu-open");
+
+  var width = document.getElementById("search-sidebox").style.width;
+  if (width === "0px" || width == "") {
+    document.getElementById("search-sidebox").style.width = "100%";
+  } else {
+    document.getElementById("search-sidebox").style.width = "0px";
+  }
+}
+
+//search side box js ends
+
+///search input type start js
+
+function handleInput() {
+  // Get the value from the input field
+  const input = document.querySelector(".search_side_input");
+  const popularSearch = document.querySelector(".popular_search_section");
+  const searchResults = document.querySelector(".search_result_section");
+  const inputValue = input.value.trim();
+
+  if (inputValue !== "") {
+    // Trigger an alert message when something is typed
+    popularSearch.style.display = "none";
+    searchResults.style.display = "block"
+  }else{
+    popularSearch.style.display = "block";
+    searchResults.style.display = "none";
+  }
+}
+
+///search input type start js ends

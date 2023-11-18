@@ -43,7 +43,7 @@
                     <button>Sign In</button>
                 </div>
 
-                <div class="mob_academy_search_icon">
+                <div class="mob_academy_search_icon" onclick="searchIconClick()">
                     <i class="fa fa-search"></i>
                 </div>
                 <div class="animated-icon" onclick="Nav()">
@@ -738,7 +738,7 @@
 
                 <div>
                     <div class="mobile_home_blogs">
-                        <p class="mob_academy_blogs">Our new Blogs</p>
+                        <p class="mob_academy_blogs">Our Blogs</p>
                         <p class="mobile_home_blogs_para mob_academy_blog_para">Read our blogs to get latest news and
                             insights of sports in
                             India</p>
@@ -1433,7 +1433,7 @@
 
                                 <div class="location_flex">
                                     <div>
-                                      <img src="asset_mobile/images/location.svg" alt="">
+                                        <img src="asset_mobile/images/location.svg" alt="">
                                     </div>
                                     <span class="detect_location">Detect my location</span>
                                 </div>
@@ -1544,13 +1544,138 @@
             </div>
     </header>
 
-
-
-
-
-
-
     <!-- hamber click menu ends -->
+
+    <!-- search icon click  -->
+
+    <header class="page-header mob_side_menu">
+        <div class="container-fluid container-space bg-light fixed-top">
+            <div class="row">
+                <div class="col-1 d-flex justify-content-center">
+                    <div id="search-sidebox" class="sidenav">
+
+
+
+
+
+                        <div class="side_menu_top side_search_top">
+
+                            <div class="side_top_flex">
+
+                                <div class="side_search_cross" onclick="searchIconClick()">
+                                    <img src="asset_mobile/images/menu_cross.svg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="city_search_container side_search_box">
+                            <div class="city_search_icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <input type="text" class="city_search_input search_side_input"
+                                placeholder="Search for your city by name or pin code" oninput="handleInput()">
+                        </div>
+
+                        <!-- popular search result section -->
+
+                        <div class="popular_search_section">
+  
+                        <div>
+                            <p class="side_popular_search">Popular Searches</p>
+                        </div>
+
+                        <div class="popular_result_list">
+                            <div class="popular_result">
+                                <span>Football</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Basketball</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Kuljeet Academy</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>ISL</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Kerela Blasters FC</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Kerela Blasters FC</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Roshan Naorem</span>
+                            </div>
+                            <div class="popular_result">
+                                <span>Sunil Chhetri</span>
+                            </div>
+                        </div>
+
+                        </div>
+
+                        <!-- popular search result section ends-->
+
+                        <!-- search results section  -->
+
+                       
+                        <div class="search_result_section">
+                            <div>
+                                <p class="final_result_heading">Results</p>
+                            </div>
+
+                            <div class="result_list">
+                                <ul>
+                                    <li>
+                                        <div class="result_new_flex">
+                                            <img src="asset_mobile/images/arrow-up.svg" alt="">
+                                            <div class="result_display">
+                                                <span class="result_name">Football</span>
+                                                    <span class="result_type">Sports</span>  
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="result_new_flex">
+                                            <img src="asset_mobile/images/arrow-up.svg" alt="">
+                                            <div class="result_display">
+                                                <span class="result_name">Franjo Prince</span>
+                                                    <span class="result_type">Player</span>  
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- search results section ends -->
+
+
+
+
+
+
+                        
+
+
+                        <div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- search icon click ends -->
     </section>
 
 

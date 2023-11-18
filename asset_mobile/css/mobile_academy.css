@@ -21,7 +21,6 @@ body {
   overflow: auto; /* Enable scrolling by default */
 }
 
-
 /* header css  */
 
 .mobile_top_header {
@@ -2276,8 +2275,6 @@ label {
   .mob_message_btn {
     margin-right: 0.5rem;
   }
-
-
 }
 
 @media only screen and (max-width: 365px) {
@@ -2429,14 +2426,13 @@ label {
   border-bottom: 1px solid #dcdcdc;
 }
 
-.mob_side_menu{
- z-index: 1000;
- overflow: hidden;
+.mob_side_menu {
+  z-index: 1000;
+  overflow: hidden;
 }
 
 .city_page {
   display: none;
-
 }
 
 .menu_content,
@@ -2462,7 +2458,7 @@ label {
   align-items: center;
 }
 
-.menu_content{
+.menu_content {
   display: block;
 }
 
@@ -2489,15 +2485,15 @@ label {
   width: 100%;
 }
 
-.detect_location{
-color:#FE5C4D;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-weight: 600;
-margin-left: 0.3rem;
+.detect_location {
+  color: #fe5c4d;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.3rem;
 }
 
-.location_flex{
+.location_flex {
   display: flex;
   justify-content: start;
   align-items: end;
@@ -2505,34 +2501,33 @@ margin-left: 0.3rem;
   margin-top: -0.5rem;
 }
 
-.popular_city_heading{
-  color:#222;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 600;
-line-height: 1.5625rem; 
-text-transform: capitalize;
-margin-left: 1rem;
-margin-top: 1rem;
-margin-bottom: 1rem;
+.popular_city_heading {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  text-transform: capitalize;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.menu_city_name{
-  color:#505050;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 500;
-text-transform: capitalize;
+.menu_city_name {
+  color: #505050;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .menu-open {
   overflow: hidden; /* Disable scrolling when menu is open */
 }
 
-
-.mob_city_relative{
+.mob_city_relative {
   margin-right: 1.25rem;
   margin-bottom: 1rem;
   width: 70px;
@@ -2542,46 +2537,185 @@ text-transform: capitalize;
   flex-direction: column;
 }
 
-.city_list{
+.city_list {
   margin-left: 1rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.other_cities{
-  color:#FE5C4D;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 600;
-margin-left: 1rem;
+.other_cities {
+  color: #fe5c4d;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 1rem;
 }
 
-.india_city_list{
+.india_city_list {
   margin-left: 1rem;
   height: 25vh;
   overflow: auto;
 }
 
-.india_city_list ul{
+.india_city_list ul {
   list-style: none;
 }
 
-.india_city_list ul li{
-  color: #AAA;
-font-family: DM Sans;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 500;
-border-bottom: 1px solid #dcdcdc;
-padding-top: 0.8rem;
-padding-bottom: 0.8rem;
-margin-left: -2rem;
-margin-right: 1rem;
+.india_city_list ul li {
+  color: #aaa;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-left: -2rem;
+  margin-right: 1rem;
 }
 
-.india_city_list ul li:last-child{
+.india_city_list ul li:last-child {
   border-bottom: 1px solid transparent;
 }
+
+/* side search css  */
+
+.side_search_top {
+  background-color: #fe5c4d;
+  height: 6rem;
+  align-items: start;
+}
+
+.side_search_box {
+  margin-top: -1.3rem;
+  border-radius: 0.3125rem;
+  background: var(--White, #fff);
+  border: none;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  height: 3rem;
+}
+
+.side_search_box .city_search_icon i {
+  margin-left: 0.5rem;
+}
+
+.side_search_cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.3rem;
+}
+
+.side_popular_search {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.popular_result p {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.popular_result {
+  padding: 0.2rem 0.8rem;
+  border-radius: 1.25rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  margin-bottom: 0.6rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular_result_list {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search_result_section {
+  display: none;
+  margin-top: -1rem;
+}
+
+.final_result_heading {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-top: 2rem !important;
+}
+
+.result_list ul{
+  list-style: none;
+  margin-left: 1rem;
+  margin-left: -1rem;
+  height: 60vh;
+  overflow: auto;
+}
+
+.result_list ul li{
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+ border-bottom: 1px solid #dcdcdc;
+ margin-right: 1rem;
+}
+
+.result_name{
+  color: #222;
+font-family: DM Sans;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 600;
+text-transform: capitalize;
+}
+
+.result_type{
+  color:#AAA;
+font-family: DM Sans;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.02563rem;
+text-transform: capitalize;
+}
+
+.result_new_flex{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.result_new_flex img{
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.result_display{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+/* side search css ends */
 /* side navbar ends */
