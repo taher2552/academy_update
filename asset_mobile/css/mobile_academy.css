@@ -2425,7 +2425,7 @@ label {
 }
 
 .mob_side_menu{
- position: fixed;
+ overflow: hidden;
  z-index: 1000;
 }
 
