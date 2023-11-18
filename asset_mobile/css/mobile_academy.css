@@ -2688,6 +2688,10 @@ label {
  margin-right: 1rem;
 }
 
+.result_list ul li:last-child{
+  border-bottom: 1px solid transparent;
+}
+
 .result_name{
   color: #222;
 font-family: DM Sans;
