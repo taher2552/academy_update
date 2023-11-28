@@ -21,6 +21,15 @@ body {
   overflow: auto; /* Enable scrolling by default */
 }
 
+.mob_font{
+  color:#222;
+font-family: DM Sans;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
 /* header css  */
 
 .mobile_top_header {
@@ -152,10 +161,15 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 220px; /* Fixed height for the container */
+  overflow: hidden;
 }
 
+
 .mobile_academy_banner img {
-  max-width: 100%;
+  width: 100vw;
   height: 220px;
   padding-bottom: 3rem;
   z-index: -1000;
@@ -721,6 +735,11 @@ body {
   font-style: normal;
   font-weight: 500;
   margin-left: 0.3rem;
+}
+
+.mob_academy_grey_email span{
+  font-weight: 600;
+  color: #222;
 }
 
 .mob_academy_grey_tick p {
@@ -1503,10 +1522,6 @@ body {
 }
 
 .mob_academy_listing_feature_flex_2 {
-  border-radius: 2.8125rem;
-  padding: 0.5rem 0.6rem;
-  margin-top: 0.5rem;
-  border-radius: 1.875rem;
   background: #fff5e4;
   margin-left: 0.3rem;
 }
@@ -1554,9 +1569,9 @@ body {
 /* filter page  */
 
 .mob_filter_wrapper {
-  max-width: 550px;
+  /* max-width: 550px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem; */
 }
 
 .mob_filter_box {
@@ -1566,7 +1581,7 @@ body {
 }
 
 .mob_filter_by,
-.mob_filter_cross p {
+.mob_filter_cross p{
   color: #222;
   font-family: DM Sans;
   font-size: 1.25rem;
@@ -1579,6 +1594,9 @@ body {
   background-color: #e8e8ee;
   padding: 0.3rem 0.8rem;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mob_filter_input {
@@ -2361,6 +2379,23 @@ label {
   -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+#filter_div{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff !important;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
 .sidenav a {
   padding-left: 1rem;
   padding-bottom: 1rem;
@@ -2730,5 +2765,80 @@ text-transform: capitalize;
   flex-direction: column;
 }
 
+
 /* side search css ends */
 /* side navbar ends */
+
+#filter_div{
+  padding: 1rem;
+}
+
+/* tournament extra css  */
+
+.tour_start_date{
+  color: #AAA;
+font-size: 0.6875rem;
+font-style: italic;
+}
+
+.tour_date_container{
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tour_left_date{
+  margin-left: 1rem;
+}
+
+.tour_full_date{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.tour_full_date img{
+  margin-right: 0.3rem;
+}
+.tour_date_1{
+margin-bottom: 0.2rem;
+margin-top: 0.1rem;
+}
+
+.tour_end_date{
+  margin-left: 2rem;
+}
+
+
+/* table css  */
+.group-play--details {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+.play-table--heading {
+  background-color: #17479e;
+  padding: 10px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.play-table--heading h3 {
+  color: #ffffff;
+  margin: 0;
+}
+.play-table .club-name {
+  text-transform: capitalize;
+}
+.play-table td,
+.play-table .club-name span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+
+/* table css ends */
+/* tournament extra css  */

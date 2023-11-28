@@ -15,7 +15,7 @@
 
 
     <link rel="stylesheet" href="asset_mobile/css/mobile_footer.css">
-    <link rel="stylesheet" href="asset_mobile/css/mobile_academy.css">
+    <link rel="stylesheet" href="asset_mobile/css/mob_tournament.css">
     <!-- <link rel="stylesheet" href="asset_mobile/css/style.css"> -->
 
 
@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="content">
+<body>
 
     <section class="mobile_top_header">
         <div class="mobile_home_top_header">
@@ -44,9 +44,6 @@
                 <div class="mob_academy_search_icon" onclick="searchIconClick()">
                     <i class="fa fa-search"></i>
                 </div>
-                <div class="animated-icon" onclick="Nav()">
-                    <img src="asset_mobile/images/menu.svg" alt="">
-                </div>
             </div>
         </div>
     </section>
@@ -62,19 +59,25 @@
 
             <div class="mobile_academy_banner">
                 <div class="image_slider">
-                    <a href="asset_mobile/images/new_banner.jpeg" data-fancybox="gallery0">
-                        <img src="asset_mobile/images/new_banner.jpeg" alt="" />
+                    <a href="asset_mobile/images/tour_banner.png" data-fancybox="gallery0">
+                        <img src="asset_mobile/images/tour_banner.png" alt="" />
                     </a>
 
                     <a href="asset_mobile/images/inner-banner.jpg" data-fancybox="gallery0">
                         <img src="asset_mobile/images/inner-banner.jpg" alt="" />
+                    </a>
+                    <a href="asset_mobile/images/inner-banner.jpg" data-fancybox="gallery0">
+                        <img src="asset_mobile/images/banner.jpg" alt="" />
+                    </a>
+                    <a href="asset_mobile/images/inner-banner.jpg" data-fancybox="gallery0">
+                        <img src="asset_mobile/images/new_banner.jpeg" alt="" />
                     </a>
                 </div>
 
 
                 <div class="mobile_academy_wrapper">
                     <div class="mobile_academy_logo">
-                        <img src="asset_mobile/images/lg-clublogo.png" alt="">
+                        <img src="asset_mobile/images/tour_logo.png" alt="">
                     </div>
 
 
@@ -104,7 +107,7 @@
         </div>
 
         <div class="mob_academy_star">
-            <p class="mob_academy_name">kuljeet football academy</p>
+            <p class="mob_academy_name">Santosh Trophy</p>
             <img src="asset_mobile/images/star_tick.svg" alt="">
         </div>
 
@@ -123,6 +126,40 @@
             </div>
         </div>
 
+
+        <div class="tour_date_container">
+
+            <div class="tour_left_date">
+                <span class="tour_start_date mob_font">start Date</span>
+
+                <div class="tour_full_date tour_date_1">
+                    <img src="asset_mobile/images/tour_cal.svg" alt="">
+                    <span class="mob_font">Sun, 15th Oct, 2023</span>
+                </div>
+
+                <div class="tour_full_date">
+                    <img src="asset_mobile/images/tour_clock.svg" alt="">
+                    <span class="mob_font">11:10 AM</span>
+                </div>
+            </div>
+
+            <div class="tour_left_date tour_end_date">
+                <span class="tour_start_date mob_font">End Date</span>
+
+                <div class="tour_full_date tour_date_1">
+                    <img src="asset_mobile/images/tour_cal.svg" alt="">
+                    <span class="mob_font">Sun, 15th Oct, 2023</span>
+                </div>
+
+                <div class="tour_full_date">
+                    <img src="asset_mobile/images/tour_clock.svg" alt="">
+                    <span class="mob_font">11:10 AM</span>
+                </div>
+            </div>
+
+
+        </div>
+
         <!-- top banner section ends  -->
 
         <!-- top tabs  -->
@@ -134,9 +171,11 @@
                     <ul>
                         <li class="active" data-bs-toggle="tab" onclick="profileTabClick()">Profile</li>
 
-                        <li class="" data-bs-toggle="tab" onclick="feeTabClick()">Fee</li>
+                        <li class="" data-bs-toggle="tab" onclick="feeTabClick()">Fixture & Results</li>
 
-                        <li class="" data-bs-toggle="tab" onclick="trainingTabClick()">Training</li>
+                        <li class="" data-bs-toggle="tab" onclick="trainingTabClick()">Standings</li>
+
+                        <li class="" data-bs-toggle="tab" onclick="photoTabClick()">Champions</li>
 
                         <li class="" data-bs-toggle="tab" onclick="photoTabClick()">Photos</li>
                     </ul>
@@ -154,37 +193,217 @@
             <div class="mob_academy_box">
 
                 <div class="mob_academy_fee_box">
-                    <p class="mob_academy_fee_heading">Fee & Batches</p>
+                    <p class="mob_academy_fee_heading">Basic Info</p>
                 </div>
 
                 <div class="mob_academy_fee_list">
 
                     <ul>
                         <li>
-                            <img src="asset_mobile/images/weekly.svg" alt="" /> open
-                            Mon to Sun ( 10-8PM )
+                            <img src="asset_mobile/images/tour_silver_1.svg" alt="" /> open
+                            Level: State
                         </li>
                         <li>
-                            <img src="asset_mobile/images/gendar.svg" alt="" /> Gender
-                            Boys/Girls/All
+                            <img src="asset_mobile/images/tour_silver_2.svg" alt="" /> Gender
+                            sports : Football
                         </li>
                         <li>
-                            <img src="asset_mobile/images/batch.svg" alt="" /> 12
-                            batches, 200 students
+                            <img src="asset_mobile/images/tour_silver_3.svg" alt="" /> 12
+                            Category : Open tournament
                         </li>
                         <li>
-                            <img src="asset_mobile/images/year.svg" alt="" /> 12 years
-                            of experience
-                        </li>
-                        <li>
-                            <img src="asset_mobile/images/rank.svg" alt="" /> 2nd Rank
-                            in Gurgaon
+                            <img src="asset_mobile/images/tour_silver_4.svg" alt="" /> tournament ID : TTSCXD712
                         </li>
                     </ul>
 
                 </div>
 
             </div>
+
+            <div class="mob_academy_box">
+
+                <div class="mob_academy_fee_box mob_academy_fee_status">
+                    <div class="mob_academy_verify">
+                        <p class="mob_academy_verified">organizers info</p>
+                        <img src="asset_mobile/images/star_tick.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mob_academy_verify_content">
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/grey_tick.svg" alt="">
+                        <p class="mob_academy_grey_email">vinay.chopra@rpsg.in</p>
+                    </div>
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/grey_tick.svg" alt="">
+                        <p class="mob_academy_grey_email">+91 7412589325</p>
+                    </div>
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/grey_tick.svg" alt="">
+                        <p class="mob_academy_grey_email">https://www.kjacademy.com</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="mob_academy_box">
+
+                <div class="mob_academy_fee_box mob_academy_fee_status">
+                    <div class="mob_academy_verify">
+                        <p class="mob_academy_verified">Prize Details</p>
+                    </div>
+                </div>
+
+                <div class="mob_academy_verify_content">
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/tour_cup_1.svg" alt="">
+                        <p class="mob_academy_grey_email"><span>1st Prize :</span> 6 feet trophy</p>
+                    </div>
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/tour_cup_2.svg" alt="">
+                        <p class="mob_academy_grey_email"><span>2nd Prize :</span> 4 feet trophy</p>
+                    </div>
+                    <div class="mob_academy_grey_tick">
+                        <img src="asset_mobile/images/tour_cup_3.svg" alt="">
+                        <p class="mob_academy_grey_email"><span>3rd Prize :</span> 2 feet trophy</p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="group-play--details">
+                <div class="play-table--heading">
+                  <h3>group A</h3>
+                </div>
+                <div class="play-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">#</th>
+                        <th scope="col" class="w-25 text-left">Club Name</th>
+                        <th scope="col" class="text-center">P</th>
+                        <th scope="col" class="text-center">W</th>
+                        <th scope="col" class="text-center">D</th>
+                        <th scope="col" class="text-center">L</th>
+                        <th scope="col" class="text-center">GF</th>
+                        <th scope="col" class="text-center">GA</th>
+                        <th scope="col" class="text-center">GD</th>
+                        <th scope="col" class="text-center">Points</th>
+                        <th scope="col" class="w-25 text-center">Form</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="text-center">1</th>
+                        <td>
+                          <div class="club-name">
+                            <img src="asset_mobile/images/fcgoa.svg" alt="">
+                            <span>fCG</span>
+                          </div>
+                        </td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">33</td>
+                        <td class="text-center">
+                          <div class="streaks">
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="text-center">2</th>
+                        <td>
+                          <div class="club-name">
+                            <img src="asset_mobile/images/fckb.svg" alt="">
+                            <span>KBFC</span>
+                          </div>
+                        </td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">20</td>
+                        <td class="text-center">
+                          <div class="streaks">
+                            <span class="loose-red">l</span>
+                            <span class="win-green">w</span>
+                            <span class="loose-red">l</span>
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="text-center">3</th>
+                        <td>
+                          <div class="club-name">
+                            <img src="asset_mobile/images/mbsg.svg" alt="">
+                            <span>MBSG</span>
+                          </div>
+                        </td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">15</td>
+                        <td class="text-center">
+                          <div class="streaks">
+                            <span class="win-green">w</span>
+                            <span class="win-green">w</span>
+                            <span class="loose-red">l</span>
+                            <span class="draw-yellow">d</span>
+                            <span class="win-green">w</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="text-center">4</th>
+                        <td>
+                          <div class="club-name">
+                            <img src="asset_mobile/images/mcfc.svg" alt="">
+                            <span>MCFC</span>
+                          </div>
+                        </td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center">15</td>
+                        <td class="text-center">
+                          <div class="streaks">
+                            <span class="draw-yellow">d</span>
+                            <span class="win-green">w</span>
+                            <span class="loose-red">l</span>
+                            <span class="win-green">w</span>
+                            <span class="not-play">-</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
 
 
             <div class="mob_academy_box">
@@ -290,39 +509,7 @@
 
             </div>
 
-            <div class="mob_academy_box">
 
-                <div class="mob_academy_fee_box mob_academy_fee_status">
-                    <div class="mob_academy_verify">
-                        <p class="mob_academy_verified">Verified Info</p>
-                        <img src="asset_mobile/images/star_tick.svg" alt="">
-                    </div>
-
-                    <div class="mob_call_msg">
-                        <button class="mob_message_btn trigger-msg"> <img src="asset_mobile/images/message.svg"
-                                alt="">Message</button>
-                        <button class="mob_call_btn"> <img src="asset_mobile/images/call.svg" alt="">Call</button>
-                    </div>
-                </div>
-
-                <div class="mob_academy_verify_content">
-                    <div class="mob_academy_grey_tick">
-                        <img src="asset_mobile/images/grey_tick.svg" alt="">
-                        <p class="mob_academy_grey_email">vinay.chopra@rpsg.in</p>
-                    </div>
-                    <div class="mob_academy_grey_tick">
-                        <img src="asset_mobile/images/grey_tick.svg" alt="">
-                        <p class="mob_academy_grey_email">+91 7412589325</p>
-                    </div>
-                    <div class="mob_academy_grey_tick">
-                        <img src="asset_mobile/images/grey_tick.svg" alt="">
-                        <p class="mob_academy_grey_email">https://www.kjacademy.com</p>
-                    </div>
-
-                </div>
-
-
-            </div>
 
 
             <div class="mob_academy_box">
@@ -333,8 +520,8 @@
                     </div>
 
                     <div class="mob_call_msg">
-                        <button class="mob_call_btn mob_call_brochure"> <img
-                                src="asset_mobile/images/mob_download.svg" alt="">Download Brochure</button>
+                        <button class="mob_call_btn mob_call_brochure"> <img src="asset_mobile/images/mob_download.svg"
+                                alt="">Download Brochure</button>
                     </div>
                 </div>
 
@@ -1579,37 +1766,37 @@
                         <!-- popular search result section -->
 
                         <div class="popular_search_section">
-  
-                        <div>
-                            <p class="side_popular_search">Popular Searches</p>
-                        </div>
 
-                        <div class="popular_result_list">
-                            <div class="popular_result">
-                                <span>Football</span>
+                            <div>
+                                <p class="side_popular_search">Popular Searches</p>
                             </div>
-                            <div class="popular_result">
-                                <span>Basketball</span>
+
+                            <div class="popular_result_list">
+                                <div class="popular_result">
+                                    <span>Football</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Basketball</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Kuljeet Academy</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>ISL</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Kerela Blasters FC</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Kerela Blasters FC</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Roshan Naorem</span>
+                                </div>
+                                <div class="popular_result">
+                                    <span>Sunil Chhetri</span>
+                                </div>
                             </div>
-                            <div class="popular_result">
-                                <span>Kuljeet Academy</span>
-                            </div>
-                            <div class="popular_result">
-                                <span>ISL</span>
-                            </div>
-                            <div class="popular_result">
-                                <span>Kerela Blasters FC</span>
-                            </div>
-                            <div class="popular_result">
-                                <span>Kerela Blasters FC</span>
-                            </div>
-                            <div class="popular_result">
-                                <span>Roshan Naorem</span>
-                            </div>
-                            <div class="popular_result">
-                                <span>Sunil Chhetri</span>
-                            </div>
-                        </div>
 
                         </div>
 
@@ -1617,7 +1804,7 @@
 
                         <!-- search results section  -->
 
-                       
+
                         <div class="search_result_section">
                             <div>
                                 <p class="final_result_heading">Results</p>
@@ -1630,7 +1817,7 @@
                                             <img src="asset_mobile/images/arrow-up.svg" alt="">
                                             <div class="result_display">
                                                 <span class="result_name">Football</span>
-                                                    <span class="result_type">Sports</span>  
+                                                <span class="result_type">Sports</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1640,7 +1827,7 @@
                                             <img src="asset_mobile/images/arrow-up.svg" alt="">
                                             <div class="result_display">
                                                 <span class="result_name">Franjo Prince</span>
-                                                    <span class="result_type">Player</span>  
+                                                <span class="result_type">Player</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1650,7 +1837,7 @@
                                             <img src="asset_mobile/images/arrow-up.svg" alt="">
                                             <div class="result_display">
                                                 <span class="result_name">Farhan Football Academy</span>
-                                                    <span class="result_type">Academy</span>  
+                                                <span class="result_type">Academy</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1665,7 +1852,7 @@
 
 
 
-                        
+
 
 
                         <div>
@@ -1769,7 +1956,7 @@
 
     </footer>
 
-    <script src="asset_mobile/js/mobile_home.js"></script>
+    <script src="asset_mobile/js/mob_tournament.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -1783,6 +1970,8 @@
             // Your custom options
         });
     </script>
+
+
 
 
 

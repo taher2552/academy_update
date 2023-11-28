@@ -1,3 +1,12 @@
+
+// sscroll to top js
+
+document.getElementById("scrollToTop").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// scroll to top js ends
+
 // progress js
 
 const mobile_academy_progressDone = document.querySelectorAll(
@@ -11,138 +20,7 @@ mobile_academy_progressDone.forEach((mobile_academy_progress) => {
 
 // progress js ends
 
-// caraousel js on home page
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var currentIndex = 0;
-//   var items = document.querySelectorAll(".carousel-item");
-//   var dots = document.querySelectorAll(".dot");
-//   var touchStartX = 0;
-//   var touchEndX = 0;
-
-//   function showItem(index) {
-//     items.forEach(function (item) {
-//       item.style.display = "none";
-//     });
-//     dots.forEach(function (dot) {
-//       dot.classList.remove("active");
-//     });
-//     items[index].style.display = "block";
-//     dots[index].classList.add("active");
-//   }
-
-//   function nextItem() {
-//     currentIndex = (currentIndex + 1) % items.length;
-//     showItem(currentIndex);
-//   }
-
-//   function prevItem() {
-//     currentIndex = (currentIndex - 1 + items.length) % items.length;
-//     showItem(currentIndex);
-//   }
-
-//   function handleTouchStart(event) {
-//     touchStartX = event.touches[0].clientX;
-//   }
-
-//   function handleTouchMove(event) {
-//     touchEndX = event.touches[0].clientX;
-//   }
-
-//   function handleTouchEnd() {
-//     var deltaX = touchEndX - touchStartX;
-//     if (deltaX > 50) {
-//       prevItem();
-//     } else if (deltaX < -50) {
-//       nextItem();
-//     }
-//   }
-
-//   dots.forEach(function (dot, index) {
-//     dot.addEventListener("click", function () {
-//       currentIndex = index;
-//       showItem(currentIndex);
-//     });
-//   });
-
-//   document.addEventListener("touchstart", handleTouchStart, false);
-//   document.addEventListener("touchmove", handleTouchMove, false);
-//   document.addEventListener("touchend", handleTouchEnd, false);
-
-//   setInterval(nextItem, 5000);
-// });
-
-// caraousel js home page ends
-
-// slider range js
-
-function getVals() {
-  // Get slider values
-  let parent = this.parentNode;
-  let slides = parent.getElementsByTagName("input");
-  let slide1 = parseFloat(slides[0].value);
-  let slide2 = parseFloat(slides[1].value);
-  // Neither slider will clip the other, so make sure we determine which is larger
-  if (slide1 > slide2) {
-    let tmp = slide2;
-    slide2 = slide1;
-    slide1 = tmp;
-  }
-
-  let displayElement = parent.getElementsByClassName("rangeValues-1")[0];
-  let displayElement2 = parent.getElementsByClassName("rangeValues-2")[0];
-  displayElement.innerHTML = "₹" + slide1;
-  displayElement2.innerHTML = "₹" + slide2;
-}
-
-window.onload = function () {
-  // Initialize Sliders
-  let sliderSections = document.getElementsByClassName(
-    "mob_filter_range_slider"
-  );
-  for (let x = 0; x < sliderSections.length; x++) {
-    let sliders = sliderSections[x].getElementsByTagName("input");
-    for (let y = 0; y < sliders.length; y++) {
-      if (sliders[y].type === "range") {
-        sliders[y].oninput = getVals;
-        // Manually trigger event first time to display values
-        sliders[y].oninput();
-      }
-    }
-  }
-};
-
-// slider range js ends
-
-// Custom Modal JS Start
-
-var modal = document.querySelector(".social-modal");
-var triggers = document.querySelectorAll(".trigger");
-var closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-
-  if (modal.classList.contains("show-modal")) {
-    document.body.classList.add("modal-open");
-  } else {
-    document.body.classList.remove("modal-open");
-  }
-}
-
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-
-for (var i = 0, len = triggers.length; i < len; i++) {
-  triggers[i].addEventListener("click", toggleModal);
-}
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-// Custom Modal JS End
 
 //tabs click js
 
@@ -291,14 +169,6 @@ closeButton3.addEventListener("click", toggleModal3);
 window.addEventListener("click", windowOnClick3);
 
 //review academy page ends
-
-// sscroll to top js
-
-document.getElementById("scrollToTop").onclick = function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-// scroll to top js ends
 
 // academy banner slider js
 
@@ -495,44 +365,6 @@ function photoTabTournamentClick() {
 
 
 
-// hamberger click js
-
-function Nav() {
-  var body = document.querySelector("body");
-  body.classList.toggle("menu-open");
-
-  var width = document.getElementById("mySidenav").style.width;
-  if (width === "0px" || width == "") {
-    document.getElementById("mySidenav").style.width = "100%";
-  } else {
-    document.getElementById("mySidenav").style.width = "0px";
-  }
-}
-
-// hamberger click js ends
-
-//select your city click js
-
-function selectCity() {
-  const selectCity = document.querySelector(".menu_content");
-  const cityPage = document.querySelector(".city_page");
-
-  // Get the computed style of selectCity
-  const selectCityDisplay = window
-    .getComputedStyle(selectCity)
-    .getPropertyValue("display");
-
-  if (selectCityDisplay === "block") {
-    selectCity.style.display = "none";
-    cityPage.style.display = "block";
-  } else {
-    selectCity.style.display = "block";
-    cityPage.style.display = "none";
-  }
-}
-
-//select your city click js ends
-
 //search side box js
 
 function searchIconClick() {
@@ -574,3 +406,45 @@ function handleInput() {
 }
 
 ///search input type start js ends
+
+
+
+
+// Custom Modal JS Start
+
+var modal = document.querySelector(".social-modal");
+var triggers = document.querySelectorAll(".trigger");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+
+  if (modal.classList.contains("show-modal")) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
+  }
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+for (var i = 0, len = triggers.length; i < len; i++) {
+  triggers[i].addEventListener("click", toggleModal);
+}
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+// Custom Modal JS End
+
+
+// banner height 
+
+
+
+   
+
+// banner height ends
